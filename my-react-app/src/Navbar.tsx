@@ -31,8 +31,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  isActive(link.path) ? "text-accent" : ""
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  isActive(link.path)
+                    ? "text-blue-600 border-b-2 border-blue-600 pb-1"
+                    : "text-gray-700"
                 }`}
               >
                 {link.name}
@@ -41,7 +43,7 @@ const Navbar = () => {
             <Button
               asChild
               variant="secondary"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
             >
               <Link to="/contact">Get a Quote</Link>
             </Button>
@@ -49,7 +51,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -59,14 +61,16 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden pb-4 bg-white border-t border-gray-200 mt-2">
+            <div className="flex flex-col space-y-4 pt-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
-                    isActive(link.path) ? "text-accent" : ""
+                  className={`text-base font-medium transition-colors py-2 px-4 rounded-lg hover:bg-gray-50 ${
+                    isActive(link.path)
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -75,8 +79,7 @@ const Navbar = () => {
               ))}
               <Button
                 asChild
-                variant="secondary"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground w-full"
+                className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-medium mt-2"
               >
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Get a Quote
