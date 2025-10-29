@@ -1,7 +1,16 @@
 import Navbar from "@/Navbar";
 import Footer from "@/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, BookOpen, Users, Target } from "lucide-react";
+import {
+  Award,
+  BookOpen,
+  Users,
+  Target,
+  Heart,
+  Brain,
+  GraduationCap,
+  Star,
+} from "lucide-react";
 
 const About = () => {
   const achievements = [
@@ -12,18 +21,55 @@ const About = () => {
     },
     {
       icon: BookOpen,
-      number: "1688+",
-      label: "Training Hours Delivered",
+      number: "3,404+",
+      label: "Training Hours (2023-24)",
     },
     {
       icon: Target,
-      number: "316+",
+      number: "436+",
       label: "Employees Trained",
     },
     {
       icon: Award,
       number: "30+",
       label: "Years of Experience",
+    },
+    {
+      icon: Brain,
+      number: "49,711+",
+      label: "KM Portal Visitations",
+    },
+    {
+      icon: GraduationCap,
+      number: "3+",
+      label: "Research Scholars Guided",
+    },
+  ];
+
+  const expertiseAreas = [
+    {
+      icon: Brain,
+      title: "Expert in Human Behaviour and Behavioural Transformation",
+      description:
+        "Harnessing profound understanding of human behaviour to uncover underlying motives and connect behavioural patterns, bringing clarity and actionable insights.",
+    },
+    {
+      icon: Heart,
+      title: "Positive Psychology Practitioner",
+      description:
+        "Applying evidence-based positive psychology interventions to enhance happiness, engagement, and job satisfaction among employees.",
+    },
+    {
+      icon: Users,
+      title: "Leadership Development Specialist",
+      description:
+        "Transforming managers into leaders who excel with confidence, empathy, and strategic outlook through customized development programs.",
+    },
+    {
+      icon: Star,
+      title: "Knowledge Management Expert",
+      description:
+        "Pioneering knowledge management solutions that drive innovation, efficiency, and continuous improvement in large-scale organizations.",
     },
   ];
 
@@ -34,13 +80,13 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              About Growth Catalyst
+              About Dr. Swaminathan Sabesan
             </h1>
-            <p className="text-lg opacity-90">
-              Empowering organizations through transformative behavioral
-              interventions and leadership development
+            <p className="text-xl opacity-90">
+              Distinguished Positive Psychologist and Learning & Development
+              Professional
             </p>
           </div>
         </div>
@@ -49,42 +95,90 @@ const About = () => {
       {/* Introduction */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
-              About Dr. Swaminathan Sabesan
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Dr. Swaminathan Sabesan is a distinguished Positive Psychologist
-                and Learning & Development (L&D) professional with over three
-                decades of experience in academia, corporate facilitation,
-                coaching, and institution building.
-              </p>
-              <p>
-                Renowned for his expertise in crafting and delivering bespoke
-                behavioral training programs, Dr. Sabesan has played a pivotal
-                role in the personal and professional development of numerous
-                senior leaders and employees across various industries.
-              </p>
-              <p>
-                With a career marked by high-impact coaching interventions and
-                consistently excellent feedback, Dr. Sabesan has collaborated
-                closely with over 75 CEOs, CXOs, and HR leaders, guiding them to
-                achieve their developmental goals.
-              </p>
-              <p>
-                His core strengths include deploying advanced psychometric
-                assessments, emotional intelligence tools, and creating
-                individualized development plans that drive meaningful change.
-              </p>
-              <p>
-                Beyond coaching, Dr. Sabesan has contributed significantly to
-                knowledge management and institution building, earning accolades
-                from industry leaders and academicians alike. He is also a
-                prolific contributor to academic journals, with numerous
-                publications on topics such as work-life balance, occupational
-                wellness, and positive psychology.
-              </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div>
+                <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
+                  Professional Profile
+                </h2>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    Dr. Swaminathan Sabesan is a distinguished Positive
+                    Psychologist and Learning & Development (L&D) professional
+                    with over three decades of experience in academia, corporate
+                    facilitation, coaching, and institution building.
+                  </p>
+                  <p>
+                    Renowned for his expertise in crafting and delivering
+                    bespoke behavioral training programs, Dr. Sabesan has played
+                    a pivotal role in the personal and professional development
+                    of numerous senior leaders and employees across various
+                    industries.
+                  </p>
+                  <p>
+                    With a career marked by high-impact coaching interventions
+                    and consistently excellent feedback, Dr. Sabesan has
+                    collaborated closely with over 75 CEOs, CXOs, and HR
+                    leaders, guiding them to achieve their developmental goals.
+                  </p>
+                  <p>
+                    His core strengths include deploying advanced psychometric
+                    assessments, emotional intelligence tools, and creating
+                    individualized development plans that drive meaningful
+                    change.
+                  </p>
+                  <p>
+                    Beyond coaching, Dr. Sabesan has contributed significantly
+                    to knowledge management and institution building, earning
+                    accolades from industry leaders and academicians alike. He
+                    is also a prolific contributor to academic journals, with
+                    numerous publications on topics such as work-life balance,
+                    occupational wellness, and positive psychology.
+                  </p>
+                </div>
+              </div>
+
+              {/* Vision, Mission & Values */}
+              <div className="space-y-6">
+                <Card className="bg-primary/5 border-primary/20">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-heading font-bold text-foreground mb-3">
+                      Vision
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      To empower personal and organizational development through
+                      cutting-edge psychological and behavioral interventions,
+                      nurturing a culture of sustained growth and holistic
+                      well-being.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-accent/5 border-accent/20">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-heading font-bold text-foreground mb-3">
+                      Mission
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      To provide transformative, evidence-based training,
+                      coaching, and consulting services that elevate personal
+                      and professional development, drive organizational
+                      excellence, and enhance mental health and resilience.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-primary text-primary-foreground">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-heading font-bold mb-3">
+                      Motto
+                    </h3>
+                    <p className="text-lg font-semibold">
+                      "Empowering Growth, Enriching Lives."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
@@ -93,17 +187,23 @@ const About = () => {
       {/* Stats Section */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
+            Impact & Achievements
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {achievements.map((achievement, index) => (
-              <Card key={index} className="text-center border-border">
+              <Card
+                key={index}
+                className="text-center border-border hover:shadow-lg transition-shadow"
+              >
                 <CardContent className="pt-6">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <achievement.icon className="h-8 w-8 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                    <achievement.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <div className="text-3xl font-bold text-primary mb-2">
+                  <div className="text-2xl font-bold text-primary mb-1">
                     {achievement.number}
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground leading-tight">
                     {achievement.label}
                   </p>
                 </CardContent>
@@ -113,69 +213,110 @@ const About = () => {
         </div>
       </section>
 
-      {/* USP Section */}
+      {/* Expertise Areas */}
       <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
+              Areas of Expertise
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {expertiseAreas.map((area, index) => (
+                <Card
+                  key={index}
+                  className="border-border hover:shadow-lg transition-shadow"
+                >
+                  <CardContent className="pt-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <area.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-heading font-bold text-foreground mb-2">
+                          {area.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {area.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
-              Unique Selling Propositions
+              Core Values
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                    In-Depth Expertise
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                    Integrity
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Harnessing a profound understanding of human behavior, delve
-                    into the intricacies of why individuals act the way they do.
-                    By uncovering the underlying motives and connecting
-                    behavioral patterns, bring clarity and actionable insights
-                    to the table that resonate with clients.
+                  <p className="text-muted-foreground text-sm">
+                    Maintaining the highest standards of ethics and
+                    professionalism in every interaction, ensuring trust and
+                    credibility.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                    Tailored Solutions
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                    Collaboration
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Known for conceptualizing, designing and delivering bespoke
-                    training solutions specifically crafted to address the
-                    unique needs of individuals, teams, and organizations. These
-                    programs are engineered to deliver lasting change.
+                  <p className="text-muted-foreground text-sm">
+                    Partnering with clients to design and implement tailored
+                    solutions that align with their unique objectives and
+                    aspirations.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                    Demonstrated Success
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                    Empathy
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    With a proven track record of delivering impactful
-                    behavioral interventions, have consistently transformed
-                    workplaces and garnered enthusiastic endorsements from
-                    clients. The interventions not only achieve results but also
-                    foster a culture of appreciation and growth.
+                  <p className="text-muted-foreground text-sm">
+                    Deeply understanding and addressing the individual and
+                    organizational challenges to provide meaningful,
+                    personalized support.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                    Ongoing Support
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                    Innovation
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Dedicated to fostering continuous development, provide
-                    ongoing consultation and lifelong mentoring. The commitment
-                    extends beyond training and coaching, ensuring sustained
-                    growth and ongoing support to help clients achieve their
-                    goals.
+                  <p className="text-muted-foreground text-sm">
+                    Continuously advancing practices by integrating the latest
+                    research and methodologies to deliver forward-thinking
+                    solutions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border md:col-span-2">
+                <CardContent className="pt-6">
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                    Excellence
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    Committed to achieving outstanding results through
+                    unwavering dedication and expertise, setting the benchmark
+                    for success.
                   </p>
                 </CardContent>
               </Card>

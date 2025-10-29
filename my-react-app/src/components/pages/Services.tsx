@@ -8,8 +8,21 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Badge } from "@/components/ui/badge";
 
 const Services = () => {
+  const assessmentTools = [
+    "EQi 2.0",
+    "EQ 360",
+    "FIRO-B",
+    "FIRO-F",
+    "MPTI",
+    "16 PF",
+    "Big Five",
+    "Thomas Profiling",
+    "My Choice, My Future",
+  ];
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -22,8 +35,8 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-lg opacity-90">
-              Comprehensive solutions designed to transform your organization
-              and empower your team
+              Comprehensive behavioral solutions designed to transform your
+              organization and empower your team
             </p>
           </div>
         </div>
@@ -34,20 +47,25 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="coaching" className="max-w-6xl mx-auto">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-12">
-              <TabsTrigger value="coaching">Coaching</TabsTrigger>
-              <TabsTrigger value="leadership">Leadership</TabsTrigger>
-              <TabsTrigger value="psychometric">Assessments</TabsTrigger>
-              <TabsTrigger value="training">Training</TabsTrigger>
+              <TabsTrigger value="coaching">Behavioral Coaching</TabsTrigger>
+              <TabsTrigger value="leadership">
+                Leadership Development
+              </TabsTrigger>
+              <TabsTrigger value="psychometric">
+                Psychometric Assessments
+              </TabsTrigger>
+              <TabsTrigger value="training">Corporate Training</TabsTrigger>
             </TabsList>
 
             <TabsContent value="coaching" className="space-y-6">
               <Card className="border-border">
                 <CardHeader>
                   <CardTitle className="text-2xl">
-                    Coaching Approach and Philosophy
+                    Behavioral Coaching Approach and Philosophy
                   </CardTitle>
                   <CardDescription>
-                    Personalized coaching for sustainable transformation
+                    Personalized coaching for sustainable professional and
+                    personal transformation
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
@@ -59,8 +77,11 @@ const Services = () => {
                     methodology prioritizes self-discovery, practical
                     application, and sustained behavioral change to ensure a
                     lasting impact felt in the coachee and discernible changes
-                    seen by all the key stakeholders.
+                    seen by all the key stakeholders. He offers behavioural
+                    coaching, developmental coaching and transition coaching for
+                    leaders at senior management levels.
                   </p>
+
                   <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
                     Participant Benefits:
                   </h3>
@@ -81,18 +102,23 @@ const Services = () => {
                       stakeholders and reinforced through continuous feedback.
                     </li>
                   </ul>
+
                   <div className="bg-primary/5 p-6 rounded-lg mt-6">
                     <h3 className="text-lg font-semibold text-foreground mb-3">
                       Coach Philosophy:
                     </h3>
-                    <p className="italic">
+                    <p className="italic leading-relaxed">
                       "The coach stays coachee-centric in his approach,
                       humanistic in his style, eclectic in the choice of tools,
                       dextrous in the deployment of skills and empowers coachee
                       to leverage his/her signature strengths for opportunity
                       development and problem management. The coach will adhere
                       to the ethical standards and respects the privacy and
-                      confidentiality of his/her coachee."
+                      confidentiality of his/her coachee. The coach stays
+                      committed throughout the engagement and ensures that the
+                      development needs of the coachee and the needs of the
+                      organization are aligned and fulfilled to all round
+                      satisfaction."
                     </p>
                   </div>
                 </CardContent>
@@ -106,7 +132,7 @@ const Services = () => {
                     Leadership Development Programs
                   </CardTitle>
                   <CardDescription>
-                    Transforming managers into inspiring leaders
+                    Transforming managers into inspiring, strategic leaders
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
@@ -118,6 +144,7 @@ const Services = () => {
                     qualities, transforming managers into leaders who excel with
                     confidence, empathy, and a strategic outlook.
                   </p>
+
                   <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
                     Key Features:
                   </h3>
@@ -142,6 +169,17 @@ const Services = () => {
                       insights that lead to measurable improvements and results.
                     </li>
                   </ul>
+
+                  <div className="bg-primary/5 p-6 rounded-lg mt-6">
+                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                      Program Impact:
+                    </h3>
+                    <p>
+                      Proven track record of developing leadership capabilities
+                      that drive organizational success and create lasting
+                      positive change in leadership behavior and mindset.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -153,7 +191,8 @@ const Services = () => {
                     Comprehensive Psychometric Profiling
                   </CardTitle>
                   <CardDescription>
-                    Scientific assessments for informed decision-making
+                    Scientific assessments for informed talent decisions and
+                    development
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
@@ -166,6 +205,7 @@ const Services = () => {
                     for various developmental programs and are crucial in
                     identifying individual strengths and areas for improvement.
                   </p>
+
                   <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
                     Key Benefits:
                   </h3>
@@ -188,14 +228,22 @@ const Services = () => {
                       relationships and aligns better with career goals.
                     </li>
                   </ul>
+
                   <div className="bg-primary/5 p-6 rounded-lg mt-6">
                     <h3 className="text-lg font-semibold text-foreground mb-3">
                       Assessment Tools Used:
                     </h3>
-                    <p>
-                      EQi 2.0, FIRO-B, FIRO-F, MPTI, 16 PF, Big Five, Thomas
-                      Profiling, and the "My Choice, My Future" assessment,
-                      among others.
+                    <div className="flex flex-wrap gap-2">
+                      {assessmentTools.map((tool, index) => (
+                        <Badge key={index} variant="secondary">
+                          {tool}
+                        </Badge>
+                      ))}
+                    </div>
+                    <p className="mt-3 text-sm">
+                      These globally recognized tools deliver precise and
+                      actionable insights that drive both personal and
+                      organizational growth.
                     </p>
                   </div>
                 </CardContent>
@@ -209,7 +257,8 @@ const Services = () => {
                     Corporate Training Interventions
                   </CardTitle>
                   <CardDescription>
-                    Equipping employees with essential skills for excellence
+                    Equipping employees with essential behavioral skills for
+                    organizational excellence
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
@@ -221,6 +270,7 @@ const Services = () => {
                     with the skills, knowledge, and behaviors necessary to excel
                     and contribute to organizational success.
                   </p>
+
                   <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
                     Customized Training Solutions:
                   </h3>
@@ -232,6 +282,7 @@ const Services = () => {
                     that are both relevant and aligned with the organization's
                     strategic objectives.
                   </p>
+
                   <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
                     Key Features:
                   </h3>
@@ -255,6 +306,18 @@ const Services = () => {
                       and performance.
                     </li>
                   </ul>
+
+                  <div className="bg-primary/5 p-6 rounded-lg mt-6">
+                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                      Training Impact (2023-2024):
+                    </h3>
+                    <p>
+                      <strong>3,404 hours</strong> of behavioral training
+                      delivered to <strong>436 employees</strong> across various
+                      divisions, covering topics from foundational values to
+                      advanced leadership and communication skills.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -263,61 +326,105 @@ const Services = () => {
           {/* Additional Services Grid */}
           <div className="mt-20">
             <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
-              Additional Services
+              Comprehensive Service Portfolio
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <Card className="border-border">
+            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle>Knowledge Management Solutions</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
-                    Implementing knowledge management solutions to augment
-                    organizational learning and user engagement. Successfully
-                    implemented CRYPTA platform with 49,711+ user visitations
-                    and 2,117 process excellence documents.
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Implementing robust knowledge management solutions to
+                    capture, organize, and utilize institutional knowledge.
+                    Features include knowledge capture systems, collaborative
+                    platforms like CRYPTA, and sustained engagement through
+                    workshops and interactive contests.
                   </p>
+                  <div className="mt-3 p-3 bg-primary/5 rounded-lg">
+                    <p className="text-xs font-semibold text-primary">
+                      Achievement: 49,711 user visitations, 2,117 process
+                      excellence documents, 221 KTF contests
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle>Employee Well-being Initiatives</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
-                    Comprehensive programs focused on mental health awareness,
-                    stress management, resilience building, and positive
-                    psychology interventions to enhance happiness and job
-                    satisfaction.
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Comprehensive approach addressing mental health support,
+                    physical wellness programs, and positive psychology
+                    interventions. Programs focus on stress management,
+                    resilience building, fitness challenges, and enhancing
+                    happiness and job satisfaction.
                   </p>
+                  <div className="mt-3 flex flex-wrap gap-1">
+                    <Badge variant="outline" className="text-xs">
+                      Mental Health
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Stress Management
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Resilience
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Positive Psychology
+                    </Badge>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle>Academic and Faculty Development</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
-                    Specialized training and mentoring to elevate faculty
-                    effectiveness, including pedagogical training, leadership in
-                    academia, and continuous professional development.
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Specialized programs for academic institutions including
+                    pedagogical training, leadership in academia, and continuous
+                    professional development. Currently serving as Professor of
+                    Practice at VIT University Chennai Campus since July 2024.
                   </p>
+                  <div className="mt-3 p-3 bg-accent/5 rounded-lg">
+                    <p className="text-xs font-semibold text-accent">
+                      Current Role: Professor of Practice, School of Social
+                      Sciences – Psychology, VIT University
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle>Consulting Services</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
-                    Expert consultation on transition management for senior
-                    leaders, performance improvement, developmental planning,
-                    and employee satisfaction based on deep systemic
-                    understanding.
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Deeply collaborative consulting approach focusing on
+                    leadership development, behavioral and cultural
+                    transformation, strategic planning, and organizational
+                    development. Provides actionable strategies for sustained
+                    and profitable growth.
                   </p>
+                  <div className="mt-3 flex flex-wrap gap-1">
+                    <Badge variant="outline" className="text-xs">
+                      Strategic Planning
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Cultural Transformation
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Organizational Development
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Performance Improvement
+                    </Badge>
+                  </div>
                 </CardContent>
               </Card>
             </div>

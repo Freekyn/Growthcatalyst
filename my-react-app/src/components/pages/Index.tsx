@@ -5,6 +5,7 @@ import ServicesSection from "@/ServiceSection";
 import AboutSection from "@/AboutSection";
 import TestimonialsSection from "@/TestimonialsSection";
 import CTASection from "@/CTASection";
+import PartnersCarousel from "@/components/PartnersCarousel";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <ServicesSection />
       <TestimonialsSection />
       <CTASection />
+      <PartnersCarousel />
       <Footer />
     </div>
   );

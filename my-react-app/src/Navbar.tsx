@@ -12,6 +12,11 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
+    { name: "Case Studies", path: "/casestudies" },
+    { name: "Current Projects", path: "/current-projects" },
+    { name: "Certifications", path: "/certifications" },
+    { name: "Media", path: "/media" },
+    { name: "Awards", path: "/awards" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -26,7 +31,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -51,7 +56,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-gray-700"
+            className="lg:hidden text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -61,8 +66,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 bg-white border-t border-gray-200 mt-2">
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="lg:hidden pb-4 bg-white border-t border-gray-200 mt-2">
+            <div className="flex flex-col space-y-2 pt-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
