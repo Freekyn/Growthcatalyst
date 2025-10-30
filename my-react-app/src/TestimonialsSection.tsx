@@ -90,16 +90,16 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-[#0B3D68]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+          <p className="text-white font-semibold text-sm uppercase tracking-wider mb-2">
             Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Hear from leaders across industries who have experienced
             transformation through our behavioral interventions
           </p>
@@ -109,10 +109,10 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-border hover:shadow-lg transition-shadow"
+              className="bg-white backdrop-blur-lg border-border hover:shadow-xl transition-shadow"
             >
               <CardHeader>
-                <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                <Quote className="h-8 w-8 text-slate-950 mb-4" />
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground italic leading-relaxed">
@@ -140,7 +140,7 @@ const TestimonialsSection = () => {
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
             <p className="text-sm font-medium text-gray-700">
               Trusted by{" "}
-              <span className="text-blue-600 font-bold">
+              <span className="text-[#0d73af] font-bold">
                 {testimonials.length}
               </span>{" "}
               senior leaders and managers

@@ -55,16 +55,16 @@ const PartnersCarousel = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-gray-50 to-blue-50 py-16 border-y border-gray-200"
-      onMouseEnter={() => setIsPaused(true)}
+      className="bg-white py-16 border-y"
+      onMouseEnter={() => setIsPaused(false)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-2 lg:px-2">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-[#0B3D68] mb-4">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#0B3D68] max-w-2xl mx-auto">
             We're proud to partner with forward-thinking organizations worldwide
             to drive growth and transformation
           </p>
@@ -142,7 +142,7 @@ const PartnersCarousel = () => {
 
         {/* Partner count */}
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-white">
             Trusted by {partners.length}+ global organizations
           </p>
         </div>

@@ -78,7 +78,7 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground py-20">
+      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-[#0B3D68] py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
@@ -98,10 +98,10 @@ const About = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
+                <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-6">
                   Professional Profile
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-[#0B3D68] leading-relaxed">
                   <p>
                     Dr. Swaminathan Sabesan is a distinguished Positive
                     Psychologist and Learning & Development (L&D) professional
@@ -137,57 +137,15 @@ const About = () => {
                   </p>
                 </div>
               </div>
-
-              {/* Vision, Mission & Values */}
-              <div className="space-y-6">
-                <Card className="bg-primary/5 border-primary/20">
-                  <CardContent className="pt-6">
-                    <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                      Vision
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      To empower personal and organizational development through
-                      cutting-edge psychological and behavioral interventions,
-                      nurturing a culture of sustained growth and holistic
-                      well-being.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-accent/5 border-accent/20">
-                  <CardContent className="pt-6">
-                    <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                      Mission
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      To provide transformative, evidence-based training,
-                      coaching, and consulting services that elevate personal
-                      and professional development, drive organizational
-                      excellence, and enhance mental health and resilience.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-primary text-primary-foreground">
-                  <CardContent className="pt-6">
-                    <h3 className="text-xl font-heading font-bold mb-3">
-                      Motto
-                    </h3>
-                    <p className="text-lg font-semibold">
-                      "Empowering Growth, Enriching Lives."
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
+        </div>
+        </div>
         </div>
       </section>
 
       {/* Stats Section */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
+          <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
             Impact & Achievements
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -198,12 +156,12 @@ const About = () => {
               >
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <achievement.icon className="h-6 w-6 text-primary" />
+                    <achievement.icon className="h-6 w-6 text-white" />
                   </div>
-                  <div className="text-2xl font-bold text-primary mb-1">
+                  <div className="text-2xl font-bold text-white mb-1">
                     {achievement.number}
                   </div>
-                  <p className="text-xs text-muted-foreground leading-tight">
+                  <p className="text-xs text-white leading-tight">
                     {achievement.label}
                   </p>
                 </CardContent>
@@ -217,7 +175,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
+            <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
               Areas of Expertise
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -229,13 +187,13 @@ const About = () => {
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <area.icon className="h-6 w-6 text-primary" />
+                        <area.icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-heading font-bold text-foreground mb-2">
+                        <h3 className="text-lg font-heading font-bold text-white mb-2">
                           {area.title}
                         </h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-white text-sm leading-relaxed">
                           {area.description}
                         </p>
                       </div>
@@ -252,16 +210,16 @@ const About = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-12 text-center">
+            <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
               Core Values
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                  <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Integrity
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-white text-sm">
                     Maintaining the highest standards of ethics and
                     professionalism in every interaction, ensuring trust and
                     credibility.
@@ -271,10 +229,10 @@ const About = () => {
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                  <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Collaboration
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-white text-sm">
                     Partnering with clients to design and implement tailored
                     solutions that align with their unique objectives and
                     aspirations.
@@ -284,10 +242,10 @@ const About = () => {
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                  <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Empathy
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-white text-sm">
                     Deeply understanding and addressing the individual and
                     organizational challenges to provide meaningful,
                     personalized support.
@@ -297,10 +255,10 @@ const About = () => {
 
               <Card className="border-border">
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                  <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Innovation
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-white text-sm">
                     Continuously advancing practices by integrating the latest
                     research and methodologies to deliver forward-thinking
                     solutions.
@@ -310,10 +268,10 @@ const About = () => {
 
               <Card className="border-border md:col-span-2">
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-3">
+                  <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Excellence
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-white text-sm">
                     Committed to achieving outstanding results through
                     unwavering dedication and expertise, setting the benchmark
                     for success.

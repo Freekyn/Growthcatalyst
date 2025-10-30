@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light text-[#0B3D68] relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -17,8 +17,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button 
               asChild 
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground group"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground group px-6 py-3 text-lg rounded-md"
             >
               <Link to="/contact">
                 Get Started Today
@@ -27,9 +26,7 @@ const CTASection = () => {
             </Button>
             <Button 
               asChild 
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="bg-[#0d73af] border-primary-foreground text-white hover:bg-[#0B3D68] hover:text-white px-6 py-3 text-lg rounded-md"
             >
               <Link to="/services">Explore Services</Link>
             </Button>

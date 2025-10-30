@@ -32,5 +32,17 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  // Guard loading of optional plugin so build won't fail when package isn't installed
+  plugins: (() => {
+    try {
+      // If using ESM and require is available in your environment this will work.
+      // If not, prefer installing the package instead: npm install tailwindcss-animate
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      const animate = require("tailwindcss-animate");
+      return [animate];
+    } catch (err) {
+      // tailwindcss-animate not installed — skip plugin to avoid build error
+      return [];
+    }
+  })(),
 };

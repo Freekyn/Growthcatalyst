@@ -49,13 +49,13 @@ const ServicesSection = () => {
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+          <p className="text-[#0B3D68] font-semibold text-sm uppercase tracking-wider mb-2">
             Our Services
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#0B3D68] mb-4">
             What We Bring to You
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[#0B3D68] max-w-2xl mx-auto">
             Comprehensive solutions designed to transform your organization and empower your team
           </p>
         </div>
@@ -64,13 +64,13 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border"
+              className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-border"
             >
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <service.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                  <service.icon className="h-6 w-6 text-white group-hover:text-white" />
                 </div>
-                <CardTitle className="text-lg">{service.title}</CardTitle>
+                <CardTitle className="text-lg text-white">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">

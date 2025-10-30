@@ -4,25 +4,25 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground overflow-hidden">
+    <section className="bg-[#0B3D68] relative bg-gradient-to-br from-primary via-primary-dark to-primary-light">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="container mx-auto px-4 py-24 md:py-32 relative">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <p className="text-white font-semibold text-sm uppercase tracking-wider">
               We're Growth Catalyst
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
               Inspiring Minds, Transforming Leaders
             </h1>
-            <p className="text-lg opacity-90 leading-relaxed">
+            <p className="text-white text-lg opacity-90 leading-relaxed">
               Enhance your organization's performance through strategic and targeted behavioral training designed to drive corporate success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 asChild 
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground group"
+                className="bg-[#0B3D68] hover:bg-accent/90 text-white group"
               >
                 <Link to="/contact">
                   Get a Quote
@@ -33,7 +33,7 @@ const Hero = () => {
                 asChild 
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="bg-white border-primary-foreground text-primary-foreground hover:bg-white/80 hover:text-primary"
               >
                 <Link to="/services">Our Services</Link>
               </Button>
@@ -42,8 +42,8 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <div className="relative">
-              <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
-              <div className="relative bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
+              <div className="absolute inset-0 bg-white/70 rounded-full blur-2xl"></div>
+              <div className="relative backdrop-blur-lg rounded-2xl p-8 shadow-xl animate-fade-in-up">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
                     <div className="text-3xl font-bold text-accent">30+</div>

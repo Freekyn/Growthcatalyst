@@ -28,7 +28,7 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground py-20">
+      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-[#0B3D68] py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
@@ -60,7 +60,7 @@ const Services = () => {
             <TabsContent value="coaching" className="space-y-6">
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle className="text-2xl">
+                  <CardTitle className="text-3xl font-bold text-white">
                     Behavioral Coaching Approach and Philosophy
                   </CardTitle>
                   <CardDescription>
@@ -68,7 +68,7 @@ const Services = () => {
                     personal transformation
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
+                <CardContent className="space-y-4 text-white">
                   <p>
                     Dr. Sabesan's coaching programs are meticulously tailored to
                     address the unique needs of each participant, emphasizing
@@ -82,7 +82,7 @@ const Services = () => {
                     leaders at senior management levels.
                   </p>
 
-                  <h3 className="text-lg font-semibold text-foreground mt-6 mb-3">
+                  <h3 className="text-xl font-bold text-white mt-6 mb-3">
                     Participant Benefits:
                   </h3>
                   <ul className="list-disc list-inside space-y-2">
@@ -104,7 +104,7 @@ const Services = () => {
                   </ul>
 
                   <div className="bg-primary/5 p-6 rounded-lg mt-6">
-                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       Coach Philosophy:
                     </h3>
                     <p className="italic leading-relaxed">
