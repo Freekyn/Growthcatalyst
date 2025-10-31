@@ -97,6 +97,13 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
+               <img
+                  src="src/assets/DSC00009.jpg"
+                  alt="Dr. Swaminathan Sabesan"
+                  className="rounded-lg w-full object-cover py-40"
+                  
+
+                />
               <div>
                 <h2 className="text-3xl font-heading font-bold text-black mb-6">
                   Professional Profile
@@ -214,7 +221,7 @@ const About = () => {
               Core Values
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-gradient-to-t from-primary-dark to-primary-light border-border">
+              <Card className="bg-gradient-to-t from-primary-dark to-primary-light hover:shadow-xl transition-shadow-xl duration-100 ">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Integrity

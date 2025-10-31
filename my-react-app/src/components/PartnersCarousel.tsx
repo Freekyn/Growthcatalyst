@@ -44,7 +44,7 @@ const PartnersCarousel = () => {
   ];
 
   return (
-    <section className="bg-background py-16 border-y border-border overflow-hidden">
+    <section className="bg-background py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -69,9 +69,9 @@ const PartnersCarousel = () => {
               {partners.map((partner) => (
                 <div
                   key={`first-${partner.id}`}
-                  className="flex-shrink-0 flex items-center justify-center bg-background rounded-xl p-6 shadow-sm border border-border hover:shadow-lg hover:border-accent/50 transition-all duration-300 hover:scale-105 min-w-[180px] mx-6"
+                  className="flex-shrink-0 flex items-center justify-center bg-background rounded-xl p-6 hover:transition-all duration-300 hover:scale-105 min-w-[180px] mx-6"
                 >
-                  <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
+                  <div className="w-32 h-16 flex items-center justify-center hover:transition-all duration-100">
                     {/* *** REPLACED WITH IMAGE TAG *** */}
                     <img
                       src={partner.logo}
@@ -85,9 +85,9 @@ const PartnersCarousel = () => {
               {partners.map((partner) => (
                 <div
                   key={`second-${partner.id}`}
-                  className="flex-shrink-0 flex items-center justify-center bg-background rounded-xl p-6 shadow-sm border border-border hover:shadow-lg hover:border-accent/50 transition-all duration-300 hover:scale-105 min-w-[180px] mx-6"
+                  className="flex-shrink-0 flex items-center justify-center bg-background rounded-xl p-6 shadow-sm hover:scale-105 min-w-[180px] mx-6"
                 >
-                  <div className="w-32 h-16 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
+                  <div className="w-32 h-16 flex items-center justify-center hover:transition-all duration-300">
                     {/* *** REPLACED WITH IMAGE TAG *** */}
                     <img
                       src={partner.logo}
@@ -124,7 +124,7 @@ const PartnersCarousel = () => {
         }
 
         .marquee-content:hover {
-          animation-play-state: paused;
+          animation-play-state: resume;
         }
 
         @keyframes scroll {
