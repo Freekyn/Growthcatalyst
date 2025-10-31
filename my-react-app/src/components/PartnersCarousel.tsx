@@ -1,5 +1,4 @@
 // src/components/PartnersCarousel.tsx
-import { useRef } from "react";
 
 // --- 1. IMPORT ALL LOGOS ---
 // The path is relative to src/components/PartnersCarousel.tsx.
