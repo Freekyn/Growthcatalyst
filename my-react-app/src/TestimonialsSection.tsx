@@ -90,7 +90,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-[#0B3D68]">
+    <section className="relative bg-gradient-to-br from-primary via-primary-dark to-primary-light py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-white font-semibold text-sm uppercase tracking-wider mb-2">
@@ -109,10 +109,10 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="bg-white backdrop-blur-lg border-border hover:shadow-xl transition-shadow"
+              className="bg-white relative backdrop-blur-lg border-border hover:shadow-xl transition-shadow"
             >
               <CardHeader>
-                <Quote className="h-8 w-8 text-slate-950 mb-4" />
+                <Quote className="h-8 w-8 text-accent mb-4" />
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground italic leading-relaxed">

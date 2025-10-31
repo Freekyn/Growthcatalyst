@@ -78,7 +78,7 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-[#0B3D68] py-20">
+      <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
@@ -98,10 +98,10 @@ const About = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-6">
+                <h2 className="text-3xl font-heading font-bold text-black mb-6">
                   Professional Profile
                 </h2>
-                <div className="space-y-4 text-[#0B3D68] leading-relaxed">
+                <div className="space-y-4 text-black leading-relaxed">
                   <p>
                     Dr. Swaminathan Sabesan is a distinguished Positive
                     Psychologist and Learning & Development (L&D) professional
@@ -143,25 +143,25 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
+          <h2 className="text-3xl font-heading font-bold text-white mb-12 text-center">
             Impact & Achievements
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {achievements.map((achievement, index) => (
               <Card
                 key={index}
-                className="text-center border-border hover:shadow-lg transition-shadow"
+                className="bg-white/80 text-center border-border hover:shadow-lg transition-shadow"
               >
                 <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <achievement.icon className="h-6 w-6 text-white" />
+                  <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center mx-auto mb-3">
+                    <achievement.icon className="h-6 w-6 text-accent" />
                   </div>
-                  <div className="text-2xl font-bold text-white mb-1">
+                  <div className="text-2xl font-bold text-primary mb-1">
                     {achievement.number}
                   </div>
-                  <p className="text-xs text-white leading-tight">
+                  <p className="text-xs text-primary leading-tight">
                     {achievement.label}
                   </p>
                 </CardContent>
@@ -172,28 +172,28 @@ const About = () => {
       </section>
 
       {/* Expertise Areas */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
+            <h2 className="text-3xl font-heading font-bold text-black mb-12 text-center">
               Areas of Expertise
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {expertiseAreas.map((area, index) => (
                 <Card
                   key={index}
-                  className="border-border hover:shadow-lg transition-shadow"
+                  className="flex flex-col border-border hover:shadow-xl transition-shadow-xl duration-100"
                 >
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <area.icon className="h-6 w-6 text-white" />
+                        <area.icon  className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-heading font-bold text-white mb-2">
+                        <h3 className="text-lg font-heading font-bold text-black mb-2">
                           {area.title}
                         </h3>
-                        <p className="text-white text-sm leading-relaxed">
+                        <p className="text-sm text-gray-700 mb-2">
                           {area.description}
                         </p>
                       </div>
@@ -207,14 +207,14 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-[#0B3D68] mb-12 text-center">
+            <h2 className="text-3xl font-heading font-bold text-black mb-12 text-center">
               Core Values
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-border">
+              <Card className="bg-gradient-to-t from-primary-dark to-primary-light border-border">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Integrity
@@ -227,7 +227,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="bg-gradient-to-r from-primary-dark to-primary-light border-border">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Collaboration
@@ -240,7 +240,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="border-border bg-gradient-to-r from-primary-dark to-primary-light">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Empathy
@@ -253,7 +253,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border">
+              <Card className="border-border bg-gradient-to-r from-primary-dark to-primary-light">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Innovation
@@ -266,7 +266,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border md:col-span-2">
+              <Card className="bg-gradient-to-t from-primary-dark to-primary-light border-border md:col-span-2">
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-heading font-bold text-white mb-3">
                     Excellence

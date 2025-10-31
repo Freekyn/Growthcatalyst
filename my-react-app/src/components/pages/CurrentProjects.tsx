@@ -78,18 +78,18 @@ const CurrentProjects = () => {
               return (
                 <Card
                   key={project.id}
-                  className="flex flex-col border-border hover:shadow-lg transition-shadow"
+                  className="flex flex-col border-border hover:shadow-xl transition-shadow-xl duration-100"
                 >
                   <CardHeader>
                     <div className="flex items-start justify-between mb-3">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <IconComponent className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+                        <IconComponent className="h-6 w-6 text-primary-dark" />
                       </div>
-                      <Badge variant="secondary" className="ml-2">
+                      <Badge className="ml-2 bg-accent/10 text-accent border-accent/20">
                         {project.status}
                       </Badge>
                     </div>
-                    <CardTitle className="text-lg">{project.title}</CardTitle>
+                    <CardTitle className="text-lg font-semibold">{project.title}</CardTitle>
                     <CardDescription>{project.type}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow space-y-3">
@@ -106,7 +106,7 @@ const CurrentProjects = () => {
                       <div className="flex items-center text-gray-600">
                         <Building className="h-4 w-4 mr-2" />
                         <span>
-                          {project.institution || project.organization}
+                          {project.institution || project.organization || project.clients}
                         </span>
                       </div>
                     </div>

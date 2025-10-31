@@ -118,7 +118,7 @@ const Awards = () => {
             {awards.map((award) => (
               <Card
                 key={award.id}
-                className="flex flex-col border-border hover:shadow-lg transition-shadow"
+                className="flex flex-col border-border hover:shadow-xl transition-shadow-2xl duration-150"
               >
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
@@ -132,7 +132,7 @@ const Awards = () => {
                 <CardContent className="flex-grow">
                   <div className="space-y-3">
                     <div>
-                      <h4 className="font-semibold text-sm text-gray-700 mb-1">
+                      <h4 className="font-bold text-sm text-gray-700 mb-1">
                         Achievement
                       </h4>
                       <p className="text-sm text-gray-600">
@@ -140,7 +140,7 @@ const Awards = () => {
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm text-gray-700 mb-1">
+                      <h4 className="font-bold text-sm text-gray-700 mb-1">
                         Significance
                       </h4>
                       <p className="text-sm text-gray-600">

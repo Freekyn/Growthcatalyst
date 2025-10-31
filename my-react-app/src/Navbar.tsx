@@ -23,7 +23,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className= "backdrop-blur-xl sticky top-0 z-50 shadow-xl">
+    <nav className= "bg-white/60 backdrop-blur-xl sticky top-0 z-50 shadow-xl">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                className={`text-sm text-black font-semibold transition-colors hover:text-blue-800 ${
                   isActive(link.path)
                     ? "text-blue-600 border-b-2 border-blue-600 pb-1"
                     : "text-gray-700"

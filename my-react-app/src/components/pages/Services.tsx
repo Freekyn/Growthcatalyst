@@ -46,7 +46,7 @@ const Services = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="coaching" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-12 h-auto">
+            <TabsList className="grid w-full text-black grid-cols-2 md:grid-cols-4 mb-12 h-auto bg-primary/10 rounded-lg p-1">
               <TabsTrigger value="coaching" className="text-xs md:text-sm py-3">
                 Behavioral Coaching
               </TabsTrigger>
@@ -416,16 +416,16 @@ const Services = () => {
                     and profitable growth.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
                       Strategic Planning
                     </Badge>
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
                       Cultural Transformation
                     </Badge>
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border border-secondary/60  text-secondary">
                       Organizational Development
                     </Badge>
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
                       Performance Improvement
                     </Badge>
                   </div>

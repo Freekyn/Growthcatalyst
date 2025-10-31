@@ -12,7 +12,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary">
+    <section className="bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground py-20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -45,7 +45,7 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <div className="bg-background rounded-2xl p-8 border border-primary/10 hover:shadow-lg transition-shadow">
-              <FaEye className="w-6 h-6 text-primary mb-3" />
+              <FaEye className="w-6 h-6 text-accent mb-3" />
               <h3 className="text-xl font-heading font-bold text-foreground mb-3">Vision</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 To empower personal and organizational development through cutting-edge psychological and behavioral interventions, nurturing a culture of sustained growth and holistic well-being.
@@ -61,7 +61,7 @@ const AboutSection = () => {
             </div>
 
             <div className="bg-background rounded-2xl p-8 border border-accent/20 hover:shadow-lg transition-shadow">
-              <GiArcheryTarget className="w-6 h-6 mb-3" />  
+              <GiArcheryTarget className="w-6 h-6 mb-3 text-accent" />
               <h3 className="text-xl font-heading font-bold text-foreground mb-3">Motto</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 "Empowering Growth, Enriching Lives."

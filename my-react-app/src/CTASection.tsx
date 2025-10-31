@@ -4,14 +4,14 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light text-[#0B3D68] relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-primary-dark via-primary-light to-primary-dark text- relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+          <h2 className="text-white text-3xl md:text-4xl font-heading font-bold">
             Ready to Transform Your Organization?
           </h2>
-          <p className="text-lg opacity-90">
+          <p className="text-lg opacity-90 text-white">
             Let's work together to unlock your team's full potential and drive sustainable growth through proven behavioral interventions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
