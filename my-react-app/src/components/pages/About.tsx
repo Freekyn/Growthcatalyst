@@ -98,7 +98,7 @@ const About = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
                <img
-                  src="src/assets/DSC00009.jpg"
+                  src="src/assets/DSC00009.webp"
                   alt="Dr. Swaminathan Sabesan"
                   className="rounded-lg w-full object-cover py-40"
                   
