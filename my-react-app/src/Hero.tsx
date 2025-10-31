@@ -33,7 +33,7 @@ const Hero = () => {
                 asChild 
                 size="lg"
                 variant="outline"
-                className="bg-white border-primary-foreground text-primary-foreground hover:bg-white/80 hover:text-primary"
+                className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-white hover:text-primary"
               >
                 <Link to="/services">Our Services</Link>
               </Button>
@@ -42,7 +42,7 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <div className="relative">
-              <div className="absolute inset-0 bg-white/70 rounded-full blur-2xl"></div>
+              <div className="absolute inset-0 bg-white/60 rounded-full blur-2xl"></div>
               <div className="relative backdrop-blur-lg rounded-2xl p-8 shadow-xl animate-fade-in-up">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
