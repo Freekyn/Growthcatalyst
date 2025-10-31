@@ -97,13 +97,11 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
-               <img
-                  src="src/assets/DSC00009.webp"
-                  alt="Dr. Swaminathan Sabesan"
-                  className="rounded-lg w-full object-cover py-40"
-                  
-
-                />
+              <img
+                src="/DSC00009.webp"
+                alt="Dr. Swaminathan Sabesan"
+                className="rounded-lg w-full object-cover py-40"
+              />
               <div>
                 <h2 className="text-3xl font-heading font-bold text-black mb-6">
                   Professional Profile
@@ -144,8 +142,8 @@ const About = () => {
                   </p>
                 </div>
               </div>
-        </div>
-        </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -194,7 +192,7 @@ const About = () => {
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <area.icon  className="h-6 w-6 text-accent" />
+                        <area.icon className="h-6 w-6 text-accent" />
                       </div>
                       <div>
                         <h3 className="text-lg font-heading font-bold text-black mb-2">
