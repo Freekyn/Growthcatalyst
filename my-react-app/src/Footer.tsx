@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Linkedin } from "lucide-react";
+// <-- Import social icons
+import {
+  Mail,
+  Phone,
+  Linkedin,
+  Facebook,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -18,22 +26,34 @@ const Footer = () => {
             <h3 className="font-heading font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm hover:text-accent transition-colors">
+                <Link
+                  to="/"
+                  className="text-sm hover:text-accent transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="text-sm hover:text-accent transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-sm hover:text-accent transition-colors">
+                <Link
+                  to="/services"
+                  className="text-sm hover:text-accent transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm hover:text-accent transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-sm hover:text-accent transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -42,33 +62,111 @@ const Footer = () => {
 
           <div>
             <h3 className="font-heading font-semibold mb-4">Services</h3>
+            {/* // -- MODIFIED SECTION -- */}
             <ul className="space-y-2">
-              <li className="text-sm opacity-90">Behavioral Coaching</li>
-              <li className="text-sm opacity-90">Leadership Development</li>
-              <li className="text-sm opacity-90">Psychometric Assessments</li>
-              <li className="text-sm opacity-90">Corporate Training</li>
+              <li>
+                <Link
+                  to="/services#behavioral-coaching"
+                  className="text-sm hover:text-accent transition-colors"
+                >
+                  Behavioral Coaching
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services#leadership-development"
+                  className="text-sm hover:text-accent transition-colors"
+                >
+                  Leadership Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services#psychometric-assessments"
+                  className="text-sm hover:text-accent transition-colors"
+                >
+                  Psychometric Assessments
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services#corporate-training"
+                  className="text-sm hover:text-accent transition-colors"
+                >
+                  Corporate Training
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-heading font-semibold mb-4">Contact</h3>
+            <h3 className="font-heading font-semibold mb-4">
+              Contact & Social
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-sm">
                 <Mail size={16} />
-                <a href="mailto:info@growthcatalyst.com" className="hover:text-accent transition-colors">
+                <a
+                  href="mailto:info@growthcatalyst.com"
+                  className="hover:text-accent transition-colors"
+                >
                   info@growthcatalyst.com
                 </a>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Phone size={16} />
-                <a href="tel:+1234567890" className="hover:text-accent transition-colors">
-                  +1 (234) 567-890
+                <a
+                  href="tel:+919962104002"
+                  className="hover:text-accent transition-colors"
+                >
+                  +91 9962104002
                 </a>
               </li>
-              <li className="flex items-center space-x-2 text-sm">
-                <Linkedin size={16} />
-                <a href="#" className="hover:text-accent transition-colors">
-                  LinkedIn
+              {/* Social Icons in Footer */}
+              <li className="flex items-center space-x-4 pt-2">
+                <a
+                  href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin
+                    size={20}
+                    className="hover:text-accent transition-colors"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/17jp3M1iCD/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <Facebook
+                    size={20}
+                    className="hover:text-accent transition-colors"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/sabesan_growthcatalyst?igsh=eGFhNjlnOG9sb3Zv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <Instagram
+                    size={20}
+                    className="hover:text-accent transition-colors"
+                  />
+                </a>
+                <a
+                  href="https://youtube.com/@swaminathansabesan?si=8SPjFhPh1ZMEBxS8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <Youtube
+                    size={20}
+                    className="hover:text-accent transition-colors"
+                  />
                 </a>
               </li>
             </ul>

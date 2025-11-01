@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+// 1. Import the Linkedin icon
+import { Menu, X, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
@@ -23,7 +24,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className= "bg-white/60 backdrop-blur-xl sticky top-0 z-50 shadow-xl">
+    <nav className="bg-white/60 backdrop-blur-xl sticky top-0 z-50 shadow-xl">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
@@ -45,6 +46,42 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            {/* Social Icons for Desktop */}
+            <div className="flex items-center gap-4 pl-4">
+              {/* 2. ADDED LinkedIn Icon for desktop */}
+              <a
+                href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-gray-700 hover:text-blue-700 transition-colors" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/17jp3M1iCD/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5 text-gray-700 hover:text-blue-600 transition-colors" />
+              </a>
+              <a
+                href="https://www.instagram.com/sabesan_growthcatalyst?igsh=eGFhNjlnOG9sb3Zv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5 text-gray-700 hover:text-pink-500 transition-colors" />
+              </a>
+              <a
+                href="https://youtube.com/@swaminathansabesan?si=8SPjFhPh1ZMEBxS8"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <Youtube className="h-5 w-5 text-gray-700 hover:text-red-600 transition-colors" />
+              </a>
+            </div>
             <Button
               asChild
               variant="secondary"
@@ -90,6 +127,42 @@ const Navbar = () => {
                   Get a Quote
                 </Link>
               </Button>
+              {/* Social Icons for Mobile */}
+              <div className="flex justify-center items-center gap-6 pt-4 border-t mt-4">
+                {/* 3. ADDED LinkedIn Icon for mobile */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-6 w-6 text-gray-700 hover:text-blue-700 transition-colors" />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-6 w-6 text-gray-700 hover:text-blue-600 transition-colors" />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-6 w-6 text-gray-700 hover:text-pink-500 transition-colors" />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="h-6 w-6 text-gray-700 hover:text-red-600 transition-colors" />
+                </a>
+              </div>
             </div>
           </div>
         )}

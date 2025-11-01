@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/Navbar";
 import Footer from "@/Footer";
 import {
@@ -8,14 +9,90 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Badge } from "../ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
+// NOTE: Make sure to place your images in the `src/assets` folder
+// and that the file names here match your actual files.
+import annamalaiAward from "@/assets/annamalai.png";
+import psychometricAward from "@/assets/Psycho.png";
+import tvsAppreciationAward from "@/assets/tvsaw.png";
+import tvsLogisticsAward from "@/assets/tvsa.png";
+import soilAward from "@/assets/soil.png";
 
 const Awards = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedTitle, setSelectedTitle] = useState("");
+
+  const handleImageClick = (image: string, title: string) => {
+    setSelectedImage(image);
+    setSelectedTitle(title);
+    setIsModalOpen(true);
+  };
+
   const awards = [
+    {
+      id: 4,
+      title: "Distinguished Alumnus Award",
+      issuer: "Annamalai University",
+      achievement:
+        "Recognizes outstanding achievements and contributions as an alumnus.",
+      significance: "Honors exceptional alumni contributions.",
+      category: "Lifetime Achievement",
+      image: annamalaiAward,
+    },
+    {
+      id: 3,
+      title: "Psychometric Educational Services Award",
+      issuer: "Chief Minister of Pondicherry",
+      achievement:
+        "Given for valuable services and contributions to Human Resource Development.",
+      significance:
+        "Highlights contributions to HR development and psychometrics.",
+      category: "HR Development",
+      image: psychometricAward,
+    },
+    {
+      id: 8,
+      title: "Appreciation from Employers",
+      issuer: "Various Organizations",
+      achievement:
+        "Received commendation from the chairman and Vice-Chairman for stellar contributions towards institution building exercise.",
+      significance:
+        "Demonstrates consistent excellence and recognition from employers across the career.",
+      category: "Professional Recognition",
+      image: tvsAppreciationAward,
+    },
+    {
+      id: 6,
+      title: "Leadership Excellence",
+      issuer: "TVS SCS",
+      achievement:
+        "Acknowledged for outstanding leadership and team performance.",
+      significance:
+        "Highlights exceptional contributions to leadership and teamwork within the organization.",
+      category: "Leadership",
+      image: tvsLogisticsAward,
+    },
+    {
+      id: 5,
+      title: "In-House Expert Recognition",
+      issuer: "School of Inspired Leadership",
+      achievement:
+        "Recognized for long and valuable association with the institution.",
+      significance: "Acknowledgement of expertise and long-term contribution.",
+      category: "Expert Recognition",
+      image: soilAward,
+    },
     {
       id: 1,
       title: "Jawaharlal Nehru Memorial Fund Award",
       issuer: "New Delhi",
-      year: "",
       achievement:
         "Awarded for securing the first rank in the MA Psychology exam at Annamalai University.",
       significance: "Recognizes academic excellence in psychology.",
@@ -25,7 +102,6 @@ const Awards = () => {
       id: 2,
       title: "All India Merit Award",
       issuer: "ISTD New Delhi",
-      year: "",
       achievement:
         "Merit Awardee for one of the papers in the ISTD Diploma exam.",
       significance:
@@ -33,68 +109,14 @@ const Awards = () => {
       category: "Professional Excellence",
     },
     {
-      id: 3,
-      title: "Psychometric Educational Services Award",
-      issuer: "Chief Minister of Pondicherry",
-      year: "",
-      achievement:
-        "Given for valuable services and contributions to Human Resource Development.",
-      significance:
-        "Highlights contributions to HR development and psychometrics.",
-      category: "HR Development",
-    },
-    {
-      id: 4,
-      title: "Distinguished Alumnus Award",
-      issuer: "Annamalai University",
-      year: "",
-      achievement:
-        "Recognizes outstanding achievements and contributions as an alumnus.",
-      significance: "Honors exceptional alumni contributions.",
-      category: "Lifetime Achievement",
-    },
-    {
-      id: 5,
-      title: "In-House Expert on Psychometrics",
-      issuer: "CFI's Graduate School of Coaching",
-      year: "",
-      achievement:
-        "Recognized as an expert in psychometrics, contributing specialized knowledge to the institution.",
-      significance: "Acknowledgement of expertise in psychometric assessments.",
-      category: "Expert Recognition",
-    },
-    {
-      id: 6,
-      title: "Leadership Excellence and Team Excellence",
-      issuer: "TVS SCS Town Hall",
-      year: "",
-      achievement:
-        "Acknowledged for outstanding leadership and team performance.",
-      significance:
-        "Highlights exceptional contributions to leadership and teamwork within the organization.",
-      category: "Leadership",
-    },
-    {
       id: 7,
       title: "Editorial and Associate Editor Roles",
       issuer: "Various Publications",
-      year: "",
       achievement:
         "Serves as Editorial Consultant for the International Journal of Asia Pacific School Psychology and SAGE Publications. Also acts as Associate Editor for the Journal of Indian Academy of Applied Psychology (JIAAP), contributing to the editorial oversight for India’s flagship journal in psychology.",
       significance:
         "These roles emphasize expertise and leadership in the field of psychology and influence in academic and professional circles.",
       category: "Academic Leadership",
-    },
-    {
-      id: 8,
-      title: "Appreciation from Employers",
-      issuer: "Various Organizations",
-      year: "",
-      achievement:
-        "Received commendation from the chairman and Vice-Chairman for stellar contributions towards institution building exercise.",
-      significance:
-        "Demonstrates consistent excellence and recognition from employers across the career.",
-      category: "Professional Recognition",
     },
   ];
 
@@ -102,7 +124,6 @@ const Awards = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      {/* Awards Content */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">
@@ -113,7 +134,6 @@ const Awards = () => {
             and industry
           </p>
 
-          {/* Awards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {awards.map((award) => (
               <Card
@@ -126,8 +146,23 @@ const Awards = () => {
                       {award.category}
                     </Badge>
                   </div>
-                  <CardTitle className="text-lg">{award.title}</CardTitle>
-                  <CardDescription className="text-gray-500">
+                  <div className="flex justify-between items-start">
+                    <CardTitle className="text-lg pr-2">
+                      {award.title}
+                    </CardTitle>
+                    {award.image && (
+                      <img
+                        src={award.image}
+                        alt={`Certificate for ${award.title}`}
+                        // ** Here is the change: w-12 h-12 is now w-14 h-14 **
+                        className="w-14 h-14 object-contain cursor-pointer hover:scale-110 transition-transform flex-shrink-0 rounded-md"
+                        onClick={() =>
+                          handleImageClick(award.image, award.title)
+                        }
+                      />
+                    )}
+                  </div>
+                  <CardDescription className="text-gray-500 pt-1">
                     {award.issuer}
                   </CardDescription>
                 </CardHeader>
@@ -155,7 +190,6 @@ const Awards = () => {
             ))}
           </div>
 
-          {/* Summary Section */}
           <section className="mt-16">
             <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
               <CardHeader>
@@ -194,7 +228,6 @@ const Awards = () => {
             </Card>
           </section>
 
-          {/* Note Section */}
           <section className="mt-8 text-center">
             <p className="text-gray-600 italic">
               These accolades illustrate outstanding contributions, leadership,
@@ -204,6 +237,23 @@ const Awards = () => {
           </section>
         </div>
       </section>
+
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="sm:max-w-[425px] md:max-w-[700px] lg:max-w-[900px]">
+          <DialogHeader>
+            <DialogTitle>{selectedTitle}</DialogTitle>
+          </DialogHeader>
+          <div className="mt-4">
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt={`Full view of ${selectedTitle}`}
+                className="w-full h-auto rounded-md"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
