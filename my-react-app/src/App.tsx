@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/hooks/ScrollToTop";
 import Index from "./components/pages/Index";
 import About from "./components/pages/About";
 import Services from "./components/pages/Services";
@@ -20,6 +21,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
+        {/* 👇 ScrollToTop must be inside BrowserRouter */}
+        <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

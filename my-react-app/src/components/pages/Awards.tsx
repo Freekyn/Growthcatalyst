@@ -17,8 +17,8 @@ const Awards = () => {
       issuer: "New Delhi",
       year: "",
       achievement:
-        "Awarded for securing the first rank in the MA Psychology exam at Annamalai University",
-      significance: "Recognizes academic excellence in psychology",
+        "Awarded for securing the first rank in the MA Psychology exam at Annamalai University.",
+      significance: "Recognizes academic excellence in psychology.",
       category: "Academic Excellence",
     },
     {
@@ -27,9 +27,9 @@ const Awards = () => {
       issuer: "ISTD New Delhi",
       year: "",
       achievement:
-        "Merit Awardee for one of the papers in the ISTD Diploma exam",
+        "Merit Awardee for one of the papers in the ISTD Diploma exam.",
       significance:
-        "Acknowledges exceptional performance in the ISTD Diploma examination",
+        "Acknowledges exceptional performance in the ISTD Diploma examination.",
       category: "Professional Excellence",
     },
     {
@@ -38,9 +38,9 @@ const Awards = () => {
       issuer: "Chief Minister of Pondicherry",
       year: "",
       achievement:
-        "Given for valuable services and contributions to Human Resource Development",
+        "Given for valuable services and contributions to Human Resource Development.",
       significance:
-        "Highlights contributions to HR development and psychometrics",
+        "Highlights contributions to HR development and psychometrics.",
       category: "HR Development",
     },
     {
@@ -49,8 +49,8 @@ const Awards = () => {
       issuer: "Annamalai University",
       year: "",
       achievement:
-        "Recognizes outstanding achievements and contributions as an alumnus",
-      significance: "Honors exceptional alumni contributions",
+        "Recognizes outstanding achievements and contributions as an alumnus.",
+      significance: "Honors exceptional alumni contributions.",
       category: "Lifetime Achievement",
     },
     {
@@ -59,8 +59,8 @@ const Awards = () => {
       issuer: "CFI's Graduate School of Coaching",
       year: "",
       achievement:
-        "Recognized as an expert in psychometrics, contributing specialized knowledge to the institution",
-      significance: "Acknowledgement of expertise in psychometric assessments",
+        "Recognized as an expert in psychometrics, contributing specialized knowledge to the institution.",
+      significance: "Acknowledgement of expertise in psychometric assessments.",
       category: "Expert Recognition",
     },
     {
@@ -69,9 +69,9 @@ const Awards = () => {
       issuer: "TVS SCS Town Hall",
       year: "",
       achievement:
-        "Acknowledged for outstanding leadership and team performance",
+        "Acknowledged for outstanding leadership and team performance.",
       significance:
-        "Highlights exceptional contributions to leadership and teamwork within the organization",
+        "Highlights exceptional contributions to leadership and teamwork within the organization.",
       category: "Leadership",
     },
     {
@@ -80,9 +80,9 @@ const Awards = () => {
       issuer: "Various Publications",
       year: "",
       achievement:
-        "Serves as Editorial Consultant for International Journal of Asia Pacific School Psychology and SAGE Publications, and Associate Editor for Journal of Indian Academy of Applied Psychology",
+        "Serves as Editorial Consultant for the International Journal of Asia Pacific School Psychology and SAGE Publications. Also acts as Associate Editor for the Journal of Indian Academy of Applied Psychology (JIAAP), contributing to the editorial oversight for India’s flagship journal in psychology.",
       significance:
-        "Emphasizes expertise and leadership in psychology field and influence in academic circles",
+        "These roles emphasize expertise and leadership in the field of psychology and influence in academic and professional circles.",
       category: "Academic Leadership",
     },
     {
@@ -91,9 +91,9 @@ const Awards = () => {
       issuer: "Various Organizations",
       year: "",
       achievement:
-        "Received commendation from chairman and Vice-Chairman for stellar contributions towards institution building exercise",
+        "Received commendation from the chairman and Vice-Chairman for stellar contributions towards institution building exercise.",
       significance:
-        "Demonstrates consistent excellence and recognition from employers across career",
+        "Demonstrates consistent excellence and recognition from employers across the career.",
       category: "Professional Recognition",
     },
   ];
@@ -127,7 +127,9 @@ const Awards = () => {
                     </Badge>
                   </div>
                   <CardTitle className="text-lg">{award.title}</CardTitle>
-                  <CardDescription>{award.issuer}</CardDescription>
+                  <CardDescription className="text-gray-500">
+                    {award.issuer}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="space-y-3">

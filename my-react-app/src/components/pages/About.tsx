@@ -96,50 +96,58 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              <img
-                src="/DSC00009.webp"
-                alt="Dr. Swaminathan Sabesan"
-                className="rounded-lg w-full object-cover py-40"
-              />
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center">
+                <div className="conatiner mx-auto px-6 md:px-10 lg:px-16">
+                  <img
+                    src="/DSC00000.png"
+                    alt="Dr. Swaminathan Sabesan"
+                    className="rounded-lg w-full max-w-sm md:max-w-md object-cover -mt-6 md:-mt-10"
+                  />
+                </div>
+              </div>
               <div>
-                <h2 className="text-3xl font-heading font-bold text-black mb-6">
-                  Professional Profile
-                </h2>
-                <div className="space-y-4 text-black leading-relaxed">
-                  <p>
-                    Dr. Swaminathan Sabesan is a distinguished Positive
-                    Psychologist and Learning & Development (L&D) professional
-                    with over three decades of experience in academia, corporate
-                    facilitation, coaching, and institution building.
-                  </p>
-                  <p>
-                    Renowned for his expertise in crafting and delivering
-                    bespoke behavioral training programs, Dr. Sabesan has played
-                    a pivotal role in the personal and professional development
-                    of numerous senior leaders and employees across various
-                    industries.
-                  </p>
-                  <p>
-                    With a career marked by high-impact coaching interventions
-                    and consistently excellent feedback, Dr. Sabesan has
-                    collaborated closely with over 75 CEOs, CXOs, and HR
-                    leaders, guiding them to achieve their developmental goals.
-                  </p>
-                  <p>
-                    His core strengths include deploying advanced psychometric
-                    assessments, emotional intelligence tools, and creating
-                    individualized development plans that drive meaningful
-                    change.
-                  </p>
-                  <p>
-                    Beyond coaching, Dr. Sabesan has contributed significantly
-                    to knowledge management and institution building, earning
-                    accolades from industry leaders and academicians alike. He
-                    is also a prolific contributor to academic journals, with
-                    numerous publications on topics such as work-life balance,
-                    occupational wellness, and positive psychology.
-                  </p>
+                <div className="px-6 md:px-0">
+                  <h2 className="text-3x1 font-heading font-bold text-black mb-6">
+                    Professional Profile
+                  </h2>
+                  <div className=" text-black leading-relaxed">
+                    <p>
+                      Dr. Swaminathan Sabesan is a distinguished Positive
+                      Psychologist and Learning & Development (L&D) professional
+                      with over three decades of experience in academia,
+                      corporate facilitation, coaching, and institution
+                      building.
+                    </p>
+                    <p>
+                      Renowned for his expertise in crafting and delivering
+                      bespoke behavioral training programs, Dr. Sabesan has
+                      played a pivotal role in the personal and professional
+                      development of numerous senior leaders and employees
+                      across various industries.
+                    </p>
+                    <p>
+                      With a career marked by high-impact coaching interventions
+                      and consistently excellent feedback, Dr. Sabesan has
+                      collaborated closely with over 75 CEOs, CXOs, and HR
+                      leaders, guiding them to achieve their developmental
+                      goals.
+                    </p>
+                    <p>
+                      His core strengths include deploying advanced psychometric
+                      assessments, emotional intelligence tools, and creating
+                      individualized development plans that drive meaningful
+                      change.
+                    </p>
+                    <p>
+                      Beyond coaching, Dr. Sabesan has contributed significantly
+                      to knowledge management and institution building, earning
+                      accolades from industry leaders and academicians alike. He
+                      is also a prolific contributor to academic journals, with
+                      numerous publications on topics such as work-life balance,
+                      occupational wellness, and positive psychology.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
