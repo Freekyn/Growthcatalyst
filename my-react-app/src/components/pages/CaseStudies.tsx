@@ -188,7 +188,9 @@ const CaseStudies = () => {
                         <h4 className="font-semibold mb-2 text-gray-900">
                           Impact:
                         </h4>
-                        <p className="text-gray-700 font-medium">{study.stats}</p>
+                        <p className="text-gray-700 font-medium">
+                          {study.stats}
+                        </p>
                       </div>
                     )}
 
@@ -220,6 +222,33 @@ const CaseStudies = () => {
           </Accordion>
         </div>
       </section>
+
+      {/* ===== NEWLY ADDED SECTION ===== */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary-dark">
+            Active Engagements
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            {activeEngagements.map((engagement, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center p-8 bg-white rounded-lg shadow-lg"
+              >
+                <div className="mb-4">{engagement.icon}</div>
+                <div className="text-4xl font-bold text-gray-900">
+                  {engagement.value}
+                </div>
+                <div className="text-lg text-gray-600 mt-1">
+                  {engagement.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* ===== END OF NEW SECTION ===== */}
+
       <Footer />
     </div>
   );

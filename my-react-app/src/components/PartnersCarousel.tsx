@@ -6,21 +6,18 @@
 // - src/tvs.png is incorrect, must be in assets, so I've assumed it's in src/assets/tvs.png.
 // - ./assets/filename.png means ../assets/filename.png relative to the component.
 
-import tvsLogo from "../assets/tvs.png";
-import toyotaTsushoLogo from "../assets/toyota-tsusho.png";
-import timkenLogo from "../assets/timken.png";
-import royalEnfieldLogo from "../assets/royal-enfield.png";
-import lmwLogo from "../assets/lmw.png";
-import lenovoLogo from "../assets/lenovo.png";
-import janaticsLogo from "../assets/janatics.png";
-import hyundaiMobisLogo from "../assets/hyundai-mobis.png";
-import daimlerLogo from "../assets/daimler.png";
-import cumminsLogo from "../assets/cummins.png";
-import ashokLeylandLogo from "../assets/ashok-leyland.png";
-import apolloTyresLogo from "../assets/apollo-tyres.png";
-import amalgamationsLogo from "../assets/amalgamations.png";
-import turboEnergyLogo from "../assets/turbo-energy.png";
-
+import tvsLogo from "../assets/ares asia.jpg";
+import toyotaTsushoLogo from "../assets/bosch.png";
+import timkenLogo from "../assets/colgate.png";
+import royalEnfieldLogo from "../assets/congruen.png";
+import lmwLogo from "../assets/dmw.png";
+import lenovoLogo from "../assets/hlmando.png";
+import janaticsLogo from "../assets/jcbl.png";
+import hyundaiMobisLogo from "../assets/parrys.png";
+import daimlerLogo from "../assets/philips.png";
+import cumminsLogo from "../assets/roca.png";
+import ashokLeylandLogo from "../assets/tvslogistics.png";
+import apolloTyresLogo from "../assets/tvssupply.jpg";
 
 const PartnersCarousel = () => {
   // --- 2. USE IMPORTED VARIABLES IN THE ARRAY ---
@@ -38,8 +35,6 @@ const PartnersCarousel = () => {
     { id: 10, name: "Cummins", logo: cumminsLogo },
     { id: 11, name: "Ashok Leyland", logo: ashokLeylandLogo },
     { id: 12, name: "Apollo Tyres", logo: apolloTyresLogo },
-    { id: 13, name: "Amalgamations", logo: amalgamationsLogo },
-    { id: 14, name: "Turbo Energy", logo: turboEnergyLogo },
   ];
 
   return (
@@ -50,7 +45,8 @@ const PartnersCarousel = () => {
             Trusted by Industry Leaders
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're proud to partner with forward-thinking organizations worldwide to drive growth and transformation
+            We're proud to partner with forward-thinking organizations worldwide
+            to drive growth and transformation
           </p>
         </div>
 
@@ -102,7 +98,9 @@ const PartnersCarousel = () => {
         {/* Partner count */}
         <div className="text-center mt-8">
           <p className="text-sm text-muted-foreground">
-            Trusted by <span className="font-bold text-primary">{partners.length}+</span> global organizations
+            Trusted by{" "}
+            <span className="font-bold text-primary">{partners.length}+</span>{" "}
+            global organizations
           </p>
         </div>
       </div>

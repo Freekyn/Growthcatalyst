@@ -26,14 +26,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-24 md:py-32 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
-              We're Growth Catalyst
-            </p>
+            <p className="text-accent font-semibold text-sm uppercase tracking-wider"></p>
             <h1 className="text-6xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
               Inspiring Minds, Transforming Leaders
             </h1>
             <p className="text-lg opacity-90 leading-relaxed max-w-3xl mx-auto">
-              Empower your organization to achieve enduring growth and excellence through customized, strategic interventions designed to build lasting competitive advantage.
+              Empower your organization to achieve enduring growth and
+              excellence through customized, strategic interventions designed to
+              build lasting competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button

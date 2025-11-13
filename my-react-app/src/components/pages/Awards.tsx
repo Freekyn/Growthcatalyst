@@ -20,7 +20,6 @@ import {
 // and that the file names here match your actual files.
 import annamalaiAward from "@/assets/annamalai.png";
 import psychometricAward from "@/assets/psycho.png";
-import tvsAppreciationAward from "@/assets/tvsaw.png";
 import tvsLogisticsAward from "@/assets/tvsa.png";
 import soilAward from "@/assets/soil.png";
 
@@ -66,7 +65,6 @@ const Awards = () => {
       significance:
         " Through his visionary work, he has positively influenced countless individuals and organizations, inspiring growth, resilience, and excellence",
       category: "Professional Recognition",
-
     },
     {
       id: 6,

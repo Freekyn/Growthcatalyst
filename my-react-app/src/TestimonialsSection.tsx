@@ -86,55 +86,59 @@ const testimonials = [
     quote:
       "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
   },
+  // --- SUMMARIZED TESTIMONIALS ---
   {
     name: "Ayush Agrawal",
-    position: "Vice President",
-    company: "India Financing at Deutsche Bank",
+    position: "Vice President, India Financing at Deutsche Bank",
+    company: "Dr.Swaminathan’s client",
     quote:
-      "As a coach, he is an extremely patient and empathetic listener, which enables him to quickly grasp others' point of view.",
+      "Dr. Sabesan is an extremely patient and empathetic listener. Over our 12-month assignment, he guided me to build a long-term professional career and define SMART goals. I saw tangible benefits and continue to see incremental benefits by adopting his methodologies.",
   },
   {
     name: "Abhishek Mazumdar",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    position:
+      "Director, Head Sales, Marketing and Business Development, Roca and Luxury Brands",
+    company: "Worked with Dr.Swaminathan",
     quote:
-      "As a coach, he is an extremely patient and empathetic listener, which enables him to quickly grasp others' point of view.",
+      "Dr. Sabesan has played a game-changer role in my professional journey. He is a patient listener who applies both technique and empathy to evaluate every dimension of a person's interactions. He continues to be a beacon of light for me, guiding me whenever I need professional help.",
   },
   {
-    name: "Govindarajan",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    name: "Govindarajan S",
+    position: "Chief Business Officer at ODWEN Technologies",
+    company: "Worked with Dr.Swaminathan",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "Dr. Sabesan is a passionate coach who provided compelling insights from a 360 'gift of truth' report and challenged my limiting beliefs. I enjoyed the developmental journey, which gave me the confidence to manage business volatility, and today I am heading the business division.",
   },
   {
-    name: "Srividya",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    name: "Srividhya Balaji",
+    position: "Digital Transformation - Analytics Lead at Philips Health Care",
+    company: "Dr.Swaminathan’s client",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "The nine-month coaching engagement was incredibly enriching. Dr. Sabesan challenged my self-limiting beliefs and offered a 'gift of truth' report from 12 stakeholders. He was a true catalyst for my growth, and many stakeholders perceived a discernible change in me.",
   },
   {
-    name: "Vasanth",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    name: "Dr Vasanth M A S",
+    position: "Sr MSL | Med Affairs | CEO Field Award Winner...",
+    company: "Reported directly to Dr.Swaminathan",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "I had the privilege of working under Dr. Sabesan during my PhD journey; he is a truly exceptional mentor, psychologist, and coach. His ability to combine theoretical knowledge with practical insights is unparalleled, and his mentorship extends beyond the academic realm to holistic development.",
   },
   {
-    name: "Manikandan",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    name: "Manikandan Ramakrishnan",
+    position:
+      "HR Business Partner | Passionate About People & Talent Development",
+    company: "Worked on the same team",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "Dr. Sabesan's TVS value sessions were always interactive and insightful. I also attended his two-day self-discovery clinic, which was a life-changing experience that helped us discover our true selves. He is a real source of inspiration and I consider him one of my mentors.",
   },
   {
-    name: "Prabavathi",
-    position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    name: "Prabhavathy Velmurugan",
+    position: "Senior Business Analyst",
+    company: "Senior to Prabhavathy",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "Attending Dr. Sabesan's SPARK intervention was a privilege. His unique facilitation, using stories and anecdotes, is infectious. He raised our self-awareness and helped us build habits of self-reflection. Stakeholders saw a significant change in us; his passion is incredible.",
   },
+  // --- RISHABH'S TESTIMONIAL (UNCHANGED) ---
   {
     name: "Rishabh",
     position: "Manager, GFS, COE, Madurai",
@@ -157,7 +161,7 @@ const TestimonialsSection = () => {
           </h2>
           <p className="text-white max-w-2xl mx-auto">
             Hear from leaders across industries who have experienced
-            transformation through our coaching  interventions
+            transformation through our training and coaching interventions
           </p>
         </div>
 
@@ -165,14 +169,17 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="bg-white relative backdrop-blur-lg border-border hover:shadow-xl transition-shadow"
+              className="bg-white relative backdrop-blur-lg border-border hover:shadow-xl transition-shadow flex flex-col" // Added flex flex-col
             >
               <CardHeader>
                 <Quote className="h-8 w-8 text-accent mb-4" />
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground italic leading-relaxed">
-                  "{testimonial.quote}"
+              <CardContent className="space-y-4 flex flex-col flex-grow">
+                {" "}
+                {/* Added flex flex-col flex-grow */}
+                <p className="text-muted-foreground italic leading-relaxed flex-grow">
+                  {" "}
+                  {/* Added flex-grow */}"{testimonial.quote}"
                 </p>
                 <div className="border-t pt-4">
                   <p className="font-semibold text-foreground">
