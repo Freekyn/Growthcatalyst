@@ -26,7 +26,7 @@ const CurrentProjects = () => {
     },
     {
       id: 2,
-      title: "Corporate Behavioral Training 2024",
+      title: "Corporate Behavioral Training",
       organization: "Multiple Corporate Clients",
       focus: "Leadership & Professional Development",
       period: "2024 - Ongoing",
@@ -124,14 +124,14 @@ const CurrentProjects = () => {
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-blue-600">3+</div>
+                    <div className="text-2xl font-bold text-blue-600">6+</div>
                     <div className="text-sm text-gray-600">
                       Current Major Projects
                     </div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-green-600">
-                      2024
+                      2025
                     </div>
                     <div className="text-sm text-gray-600">Active Year</div>
                   </div>

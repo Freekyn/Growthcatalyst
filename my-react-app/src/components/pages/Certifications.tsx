@@ -192,7 +192,7 @@ const Certifications = () => {
                     <CardTitle className="text-lg">{ip.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-sm leading-relaxed">
+                    <CardDescription className="text-sm text-primary-dark leading-relaxed">
                       {ip.description}
                     </CardDescription>
                   </CardContent>
@@ -208,7 +208,7 @@ const Certifications = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Professional Credentials
                 </h2>
-                <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="grid md:grid-cols-2 gap-4 text-center">
                   <div>
                     <div className="text-2xl font-bold text-green-600">15+</div>
                     <div className="text-sm text-gray-600">
@@ -220,12 +220,6 @@ const Certifications = () => {
                     <div className="text-sm text-gray-600">IP Creations</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-purple-600">
-                      10+
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      Countries Represented
-                    </div>
                   </div>
                 </div>
               </CardContent>

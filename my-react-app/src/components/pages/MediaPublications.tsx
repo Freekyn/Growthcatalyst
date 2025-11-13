@@ -15,7 +15,7 @@ const MediaPublications = () => {
       channels: ["DD Pothigai", "Kalaignar TV", "Vendhar TV", "Moon TV"],
       topics: ["Mental Health", "Well-being", "Resilience"],
       description:
-        "Participated in various interviews and talk shows addressing topics related to mental health, resilience, and well-being, discussing insights and strategies for managing mental health.",
+        "Participated in more than 20  talk shows  and interviews addressing topics related to mental health, resilience, and well-being, discussing insights and strategies for managing mental health.",
     },
   ];
 
@@ -23,13 +23,18 @@ const MediaPublications = () => {
     {
       type: "Conference Paper",
       title: "Knowledge Management in an Organization - The TVS SCS Approach",
-      venue: "7th Biennial Supply Chain Management Conference at IIM-Bangalore",
+      venue: "7th Biennial Supply Chain Management Conference at IIM-Bangalore, 2022",
       year: "Presented",
     },
     {
       type: "Book Chapter",
-      title:
-        "Preserving Employees' Well-being – An Organization's Post-Pandemic Imperative",
+      title: "HRM in a Post-Epidemic Global Environment: Roles, Strategies, and Implementation",
+      venue: "Apple Academic Press",
+      year: "February 2023",
+    },
+    {
+      type: "Book Chapter",
+      title: "Preserving Employees' Well-being – An Organization's Post-Pandemic Imperative",
       venue: "Apple Press USA",
       year: "March 2023",
     },
@@ -76,6 +81,20 @@ const MediaPublications = () => {
       period: "",
       description: "Member of Board of Studies",
     },
+    {
+      role: "Ph.D SUPERVISOR",
+      institution: "",
+      department: "",
+      period: "",
+      description: "Guided Ph.D scholars ( Psychology)",
+    },
+    {
+      role: "BOARD OF SELECTION ",
+      institution: "Rajiv Gandhi Institute for Youth Development",
+      department: "",
+      period: "",
+      description: "Member, Board of Selection",
+    },
   ];
 
   const editorialRoles = [
@@ -92,14 +111,12 @@ const MediaPublications = () => {
       description:
         "Contributes to editorial oversight and quality control for India's flagship psychology journal",
     },
-  ];
-
-  const professionalAffiliations = [
-    "Life Member, Indian Academy of Applied Psychology",
-    "Life Member, Indian Society for Training and Development (ISTD) & National Council Member (2008-2009)",
-    "Registered Professional Counsellor, Chennai Counselors Forum",
-    "Joint Director - Corporate Wellness Wing, Chennai Counselors Forum",
-    "Co-founder – Big Impact Solutions",
+    {
+      role: "Editorial Consultant",
+      publication: "SAGE Publications",
+      description:
+        "Provides expert content review and strategic recommendations to ensure the highest quality and impact of publications.",
+    },
   ];
 
   const researchGuidance = [
@@ -141,7 +158,7 @@ const MediaPublications = () => {
                 >
                   <CardHeader>
                     <CardTitle>Television Interviews</CardTitle>
-                    <CardDescription>
+                    <CardDescription className="text-primary">
                       {media.channels.join(", ")}
                     </CardDescription>
                   </CardHeader>
@@ -173,7 +190,7 @@ const MediaPublications = () => {
                     <div className="flex justify-between items-start">
                       <div>
                         <CardTitle className="text-lg">{pub.title}</CardTitle>
-                        <CardDescription>{pub.type}</CardDescription>
+                        <CardDescription className="text-primary">{pub.type}</CardDescription>
                       </div>
                       <Badge variant="outline">{pub.year}</Badge>
                     </div>
@@ -197,7 +214,7 @@ const MediaPublications = () => {
                 >
                   <CardHeader>
                     <CardTitle className="text-lg">{role.role}</CardTitle>
-                    <CardDescription>{role.institution}</CardDescription>
+                    <CardDescription className="text-primary">{role.institution}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     {role.department && (
@@ -228,7 +245,7 @@ const MediaPublications = () => {
                 >
                   <CardHeader>
                     <CardTitle className="text-lg">{role.role}</CardTitle>
-                    <CardDescription>{role.publication}</CardDescription>
+                    <CardDescription className="text-primary">{role.publication}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700">{role.description}</p>
@@ -238,25 +255,7 @@ const MediaPublications = () => {
             </div>
           </section>
 
-          {/* Professional Affiliations */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">
-              Professional Affiliations
-            </h2>
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <ul className="space-y-3">
-                  {professionalAffiliations.map((affiliation, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span className="text-gray-700">{affiliation}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </section>
-
+          
           {/* Research Guidance */}
           <section>
             <h2 className="text-3xl font-bold mb-8">
@@ -312,7 +311,7 @@ const MediaPublications = () => {
                     <div className="text-sm text-gray-600">TV Channels</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-pink-600">10+</div>
+                    <div className="text-2xl font-bold text-pink-600">20+</div>
                     <div className="text-sm text-gray-600">Publications</div>
                   </div>
                   <div>

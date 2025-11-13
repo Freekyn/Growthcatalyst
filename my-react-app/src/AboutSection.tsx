@@ -24,10 +24,14 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-primary-foreground">
               <p className="leading-relaxed">
-                Dr. Swaminathan Sabesan is a distinguished Positive Psychologist and Learning & Development professional with over three decades of experience in academia, corporate facilitation, coaching, and institution building.
-              </p>
-              <p className="leading-relaxed">
-                With a career marked by high-impact coaching interventions and consistently excellent feedback, Dr. Sabesan has collaborated closely with over 75 CEOs, CXOs, and HR leaders, guiding them to achieve their developmental goals.
+                At Growth Catalyst, we envision a future where leaders and organizations thrive through sustainable performance and holistic well-being. 
+                Our purpose is to empower them with strategic, psychology-driven interventions that nurture growth, resilience, and a culture of excellence.</p>
+                <p>Guided by this vision, our mission is to partner with organizations and leaders in delivering customized, evidence-based training, coaching, and consulting solutions that enhance personal effectiveness, strengthen organizational performance, and foster mentally healthy, high-impact workplaces.Empowering leaders. Elevating organizations. Enriching lives.
+             </p>
+              <p>
+              Our Motto is 
+                  Inspiring minds and transforming people 
+
               </p>
             </div>
 

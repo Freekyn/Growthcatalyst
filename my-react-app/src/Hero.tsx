@@ -3,25 +3,43 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const stats = [
+    { value: "30+", label: "Years Experience" },
+    { value: "650+", label: "Offline Coaching Hours" },
+    { value: "100+", label: "Online Coaching Hours" },
+    { value: "30+", label: "Leaders Impacted" },
+    { value: "2000+", label: "Training Hours" },
+    { value: "316+", label: "Employees Trained" },
+    { value: "10+", label: "Books Reviewed" },
+    { value: "20+", label: "Papers Published" },
+    { value: "20+", label: "Papers Presented" },
+    { value: "2", label: "Book Chapters" },
+    { value: "3", label: "Courseware Prepared" },
+    { value: "7", label: "Training Interventions" },
+    { value: "5", label: "Models & Frameworks" },
+    { value: "6", label: "Awards" },
+  ];
+
   return (
-    <section className="bg-[#0B3D68] relative bg-gradient-to-br from-primary via-primary-dark to-primary-light">
+    <section className="relative bg-gradient-to-br from-primary via-primary-dark to-primary-light text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="container mx-auto px-4 py-24 md:py-32 relative">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-white font-semibold text-sm uppercase tracking-wider"></p>
-            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
+            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
+              We're Growth Catalyst
+            </p>
+            <h1 className="text-6xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
               Inspiring Minds, Transforming Leaders
             </h1>
-            <p className="text-white text-lg opacity-90 leading-relaxed">
-              Enhance your organization's performance through strategic and
-              targeted behavioral training designed to drive corporate success.
+            <p className="text-lg opacity-90 leading-relaxed max-w-3xl mx-auto">
+              Empower your organization to achieve enduring growth and excellence through customized, strategic interventions designed to build lasting competitive advantage.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-[#0B3D68] hover:bg-accent/90 text-white group"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground group"
               >
                 <Link to="/contact">
                   Get a Quote
@@ -32,41 +50,30 @@ const Hero = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-white hover:text-primary"
+                className="bg-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
                 <Link to="/services">Our Services</Link>
               </Button>
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <div className="relative">
-              <div className="absolute inset-0 bg-white/60 rounded-full blur-2xl"></div>
-              <div className="relative backdrop-blur-lg rounded-2xl p-8 shadow-xl animate-fade-in-up">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
-                    <div className="text-3xl font-bold text-black">30+</div>
-                    <div className="text-sm mt-1 opacity-90">
-                      Years Experience
+          {/* Stats Grid */}
+          <div className="mt-16">
+            <div className="relative bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                {stats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="text-center p-3 bg-primary-foreground/5 rounded-lg backdrop-blur hover:bg-primary-foreground/10 transition-colors"
+                  >
+                    <div className="text-2xl md:text-3xl font-bold text-accent">
+                      {stat.value}
+                    </div>
+                    <div className="text-xs mt-1 opacity-90 leading-tight">
+                      {stat.label}
                     </div>
                   </div>
-                  <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
-                    <div className="text-3xl font-bold text-accent">75+</div>
-                    <div className="text-sm mt-1 opacity-90">CEOs Coached</div>
-                  </div>
-                  <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
-                    <div className="text-3xl font-bold text-accent">1688+</div>
-                    <div className="text-sm mt-1 opacity-90">
-                      Training Hours
-                    </div>
-                  </div>
-                  <div className="text-center p-4 bg-primary-foreground/5 rounded-lg backdrop-blur">
-                    <div className="text-3xl font-bold text-accent">316+</div>
-                    <div className="text-sm mt-1 opacity-90">
-                      Employees Trained
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

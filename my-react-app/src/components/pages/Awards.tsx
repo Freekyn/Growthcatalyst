@@ -59,14 +59,14 @@ const Awards = () => {
     },
     {
       id: 8,
-      title: "Appreciation from Employers",
-      issuer: "Various Organizations",
+      title: "InSPA Leadership Award 2024",
+      issuer: "InSPA",
       achievement:
-        "Received commendation from the chairman and Vice-Chairman for stellar contributions towards institution building exercise.",
+        "He is the recipient of the INSPA Leadership Award 2024, recognized for his outstanding leadership and transformative contributions in psychology, talent development, organizational well-being, and institution building.",
       significance:
-        "Demonstrates consistent excellence and recognition from employers across the career.",
+        " Through his visionary work, he has positively influenced countless individuals and organizations, inspiring growth, resilience, and excellence",
       category: "Professional Recognition",
-      image: tvsAppreciationAward,
+
     },
     {
       id: 6,

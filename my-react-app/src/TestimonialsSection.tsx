@@ -86,6 +86,62 @@ const testimonials = [
     quote:
       "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
   },
+  {
+    name: "Ayush Agrawal",
+    position: "Vice President",
+    company: "India Financing at Deutsche Bank",
+    quote:
+      "As a coach, he is an extremely patient and empathetic listener, which enables him to quickly grasp others' point of view.",
+  },
+  {
+    name: "Abhishek Mazumdar",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "As a coach, he is an extremely patient and empathetic listener, which enables him to quickly grasp others' point of view.",
+  },
+  {
+    name: "Govindarajan",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
+  {
+    name: "Srividya",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
+  {
+    name: "Vasanth",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
+  {
+    name: "Manikandan",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
+  {
+    name: "Prabavathi",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
+  {
+    name: "Rishabh",
+    position: "Manager, GFS, COE, Madurai",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+  },
 ];
 
 const TestimonialsSection = () => {
@@ -93,7 +149,7 @@ const TestimonialsSection = () => {
     <section className="relative bg-gradient-to-br from-primary via-primary-dark to-primary-light py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-white font-semibold text-sm uppercase tracking-wider mb-2">
+          <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">
             Testimonials
           </p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
@@ -101,7 +157,7 @@ const TestimonialsSection = () => {
           </h2>
           <p className="text-white max-w-2xl mx-auto">
             Hear from leaders across industries who have experienced
-            transformation through our behavioral interventions
+            transformation through our coaching  interventions
           </p>
         </div>
 

@@ -50,8 +50,7 @@ const PartnersCarousel = () => {
             Trusted by Industry Leaders
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're proud to partner with forward-thinking organizations worldwide
-            to drive growth and transformation
+            We're proud to partner with forward-thinking organizations worldwide to drive growth and transformation
           </p>
         </div>
 
