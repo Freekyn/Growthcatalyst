@@ -6,7 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
-import { Briefcase, Calendar, Users } from "lucide-react";
+import { Briefcase, Calendar, Users, ExternalLink } from "lucide-react"; // Added ExternalLink
+import { Button } from "../ui/button"; // Added Button import
 
 const CaseStudies = () => {
   // New caseStudies array based on the document
@@ -123,10 +124,26 @@ const CaseStudies = () => {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               Case Studies & Projects
             </h1>
-            <p className="text-lg opacity-90">
+            <p className="text-lg opacity-90 mb-8">
               Transformative interventions that delivered measurable results
               across organizations
             </p>
+            {/* ===== NEWLY ADDED BUTTON ===== */}
+            <a
+              href="https://drive.google.com/drive/folders/1Q91SYmQ16X8CRNYctEXAiGGY4Rlvgf97?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="secondary"
+                size="lg"
+                className="text-primary hover:bg-gray-200 font-semibold"
+              >
+                Access Full Case Studies
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            {/* ===== END OF NEW BUTTON ===== */}
           </div>
         </div>
       </section>
@@ -223,7 +240,7 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      {/* ===== NEWLY ADDED SECTION ===== */}
+      {/* ===== ACTIVE ENGAGEMENTS SECTION ===== */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12 text-primary-dark">
@@ -247,7 +264,7 @@ const CaseStudies = () => {
           </div>
         </div>
       </section>
-      {/* ===== END OF NEW SECTION ===== */}
+      {/* ===== END OF SECTION ===== */}
 
       <Footer />
     </div>
