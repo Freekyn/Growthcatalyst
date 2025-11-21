@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: Users,
       number: "75+",
-      label: "CEOs & CXOs Coached",
+      label: "CEOs/CXOs Partnered",
     },
     {
       icon: BookOpen,
@@ -35,7 +35,7 @@ const About = () => {
     {
       icon: Award,
       number: "30+",
-      label: "Years of Experience",
+      label: "Leaders Coached",
     },
     {
       icon: Brain,
@@ -99,10 +99,7 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               About Dr. Swaminathan Sabesan
             </h1>
-            <p className="text-xl opacity-90">
-              Distinguished Positive Psychologist and Learning & Development
-              Professional
-            </p>
+            <p className="text-xl opacity-90"></p>
           </div>
         </div>
       </section>
@@ -126,33 +123,84 @@ const About = () => {
                   About Dr. Swaminathan Sabesan
                 </h2>
                 <p className="text-accent font-semibold mb-6">
-                  Leadership & EQ Coach | Talent Development Expert | Founder, Growth Catalyst | Positive Psychologist | Thought leader | KM Champion | Institution Builder
+                  Leadership & EQ Coach | Facilitator |Psychometric Expert |
+                  Author | Mentor| Thought leader | KM Champion | Institution
+                  Builder
                 </p>
-                
+
                 <div className="text-muted-foreground leading-relaxed space-y-4">
                   <p>
-                    Dr. Swaminathan Sabesan is a Positive Psychologist, Leadership and EQ Coach, and Talent Development Leader with over three decades of multifaceted experience spanning academia, corporate facilitation, executive coaching, and institution building.
+                    Dr. Swaminathan Sabesan is a Positive Psychologist,
+                    Leadership and EQ Coach, and Talent Development Leader with
+                    over three decades of multifaceted experience spanning
+                    academia, corporate facilitation, executive coaching, and
+                    institution building.
                   </p>
                   <p>
-                    A deep believer in human potential, Dr. Sabesan integrates psychology, leadership science, and behavioral insights to help individuals and organizations achieve lasting transformation. His extensive work in leadership development, emotional intelligence, and organizational well-being has empowered thousands of professionals and senior leaders across industries to unlock purpose-driven performance.
+                    A deep believer in human potential, Dr. Sabesan integrates
+                    psychology, leadership science, and behavioral insights to
+                    help individuals and organizations achieve lasting
+                    transformation. His extensive work in leadership
+                    development, emotional intelligence, and organizational
+                    well-being has empowered thousands of professionals and
+                    senior leaders across industries to unlock purpose-driven
+                    performance.
                   </p>
                   <p>
-                    As the <strong className="text-foreground">Founder of Growth Catalyst</strong> and Co-Founder of Big Impact Solutions, he has coached and mentored over 30 senior leaders who are either Direct Reportees to CEOs/CXOs or first-time CEOs.
+                    As the{" "}
+                    <strong className="text-foreground">
+                      Founder of Growth Catalyst
+                    </strong>{" "}
+                    and Co-Founder of Big Impact Solutions, he has coached and
+                    mentored over 30 senior leaders who are either Direct
+                    Reportees to CEOs/CXOs or first-time CEOs.
                   </p>
                   <p>
-                    He has co-created pioneering coaching frameworks such as the <strong className="text-foreground">Coaching Competency Model, Coaching Readiness Model,</strong> and <strong className="text-foreground">Continuous Coaching Competence Assessment Framework</strong>, and designed evidence-based well-being interventions that foster thriving workplace cultures.
+                    He has co-created pioneering coaching frameworks such as the{" "}
+                    <strong className="text-foreground">
+                      Coaching Competency Model, Coaching Readiness Model,
+                    </strong>{" "}
+                    and{" "}
+                    <strong className="text-foreground">
+                      Continuous Coaching Competence Assessment Framework
+                    </strong>
+                    , and designed evidence-based well-being interventions that
+                    foster thriving workplace cultures.
                   </p>
                   <p>
-                    Dr. Sabesan has been instrumental in institutionalizing Knowledge Management initiatives, leading behavioral training programs with measurable impact, and co-facilitating internal coach certification programs for leading organizations like the Murugappa Group, Titan, TCS, L&T, Aurobindo Pharma, and Tata Steel to name a few.
+                    Dr. Sabesan has been instrumental in institutionalizing
+                    Knowledge Management initiatives, leading behavioral
+                    training programs with measurable impact, and
+                    co-facilitating internal coach certification programs for
+                    leading organizations like the Murugappa Group, Titan, TCS,
+                    L&T, Aurobindo Pharma, and Tata Steel to name a few.
                   </p>
                   <p>
-                    His contributions include authoring a chapter on <em>"Preserving Employees' Well-Being – An Organization's Post-Pandemic Imperative"</em> in HRM in a Post-Epidemic Global Environment (Apple Academic Press, 2023), and publishing numerous research papers on positive psychology and occupational wellness. He also serves as the Associate Editor of the Journal of Indian Academy of Applied Psychology.
+                    His contributions include authoring a chapter on{" "}
+                    <em>
+                      "Preserving Employees' Well-Being – An Organization's
+                      Post-Pandemic Imperative"
+                    </em>{" "}
+                    in HRM in a Post-Epidemic Global Environment (Apple Academic
+                    Press, 2023), and publishing numerous research papers on
+                    positive psychology and occupational wellness. He also
+                    serves as the Associate Editor of the Journal of Indian
+                    Academy of Applied Psychology.
                   </p>
                   <p>
-                    A recipient of prestigious recognitions such as the <strong className="text-foreground">Jawaharlal Nehru Memorial Fund Award</strong> and the <strong className="text-foreground">InSPA Leadership Award 2024</strong>, Dr. Sabesan is a certified expert in psychometrics and wellness by institutions including Yale University, the University of Michigan, and MHS Canada.
+                    A recipient of prestigious recognitions such as the{" "}
+                    Jawaharlal Nehru Memorial Fund Award, Distinguished Alumnus
+                    Award, All–India Merit Awardee – ISTD, and the InSPA
+                    Leadership Award 2024 , Dr. Sabesan is a certified expert in
+                    psychometrics and wellness by institutions including Yale
+                    University, the University of Michigan, and MHS Canada.
                   </p>
                   <p>
-                    Through <strong className="text-foreground">Growth Catalyst</strong>, Dr. Sabesan continues to ignite purposeful growth journeys—helping individuals, teams, and organizations elevate their effectiveness, resilience, and well-being.
+                    Through{" "}
+                    <strong className="text-foreground">Growth Catalyst</strong>
+                    , Dr. Sabesan continues to ignite purposeful growth
+                    journeys—helping individuals, teams, and organizations
+                    elevate their effectiveness, resilience, and well-being.
                   </p>
                 </div>
 
@@ -164,34 +212,37 @@ const About = () => {
                         <Phone className="w-5 h-5 text-accent-foreground" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Contact Information</p>
-                        <p className="text-lg font-semibold text-foreground">+91 9962104002</p>
+                        <p className="text-sm text-muted-foreground">
+                          Contact Information
+                        </p>
+                        <p className="text-lg font-semibold text-foreground">
+                          +91 9962104002
+                        </p>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
                 <Card className="mt-6 bg-blue-600/10 border-blue-800/20">
-                 <CardContent className="pt-6">
-                   <div className="flex items-center gap-3">
-                     <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
+                  <CardContent className="pt-6">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
                         <Linkedin className="w-5 h-5 text-accent-foreground" />
-                     </div>
-                   <div>
-        {/* Corrected link here */}
-                         <a 
-                              href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17/" 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-        >
+                      </div>
+                      <div>
+                        {/* Corrected link here */}
+                        <a
+                          href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <p className="text-sm text-muted-foreground hover:underline">
-                              Connect on LinkedIn
-                                </p>
-        </a>
-      </div>
-    </div>
-  </CardContent>
-</Card>
-
+                            Connect on LinkedIn
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
@@ -240,7 +291,9 @@ const About = () => {
                   {professionalAffiliations.map((affiliation, index) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-accent mt-0.5 mr-3 flex-shrink-0" />
-                      <span className="text-muted-foreground">{affiliation}</span>
+                      <span className="text-muted-foreground">
+                        {affiliation}
+                      </span>
                     </li>
                   ))}
                 </ul>

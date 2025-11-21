@@ -3,6 +3,21 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
+    name: "Ayush Agrawal",
+    position: "Vice President, India Financing at Deutsche Bank",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "Dr. Sabesan is an extremely patient and empathetic listener. Over our 12-month assignment, he guided me to build a long-term professional career and define SMART goals. I saw tangible benefits and continue to see incremental benefits by adopting his methodologies.",
+  },
+  {
+    name: "Abhishek Mazumdar",
+    position:
+      "Director, Head Sales, Marketing and Business Development, Roca and Luxury Brands",
+    company: "TVS Supply Chain Solutions Ltd.",
+    quote:
+      "Dr. Sabesan has played a game-changer role in my professional journey. He is a patient listener who applies both technique and empathy to evaluate every dimension of a person's interactions. He continues to be a beacon of light for me, guiding me whenever I need professional help.",
+  },
+  {
     name: "Boby Mohan",
     position: "Vice President and CIO",
     company: "TVS Supply Chain Solutions Ltd.",
@@ -88,38 +103,23 @@ const testimonials = [
   },
   // --- SUMMARIZED TESTIMONIALS ---
   {
-    name: "Ayush Agrawal",
-    position: "Vice President, India Financing at Deutsche Bank",
-    company: "Dr.Swaminathan’s client",
-    quote:
-      "Dr. Sabesan is an extremely patient and empathetic listener. Over our 12-month assignment, he guided me to build a long-term professional career and define SMART goals. I saw tangible benefits and continue to see incremental benefits by adopting his methodologies.",
-  },
-  {
-    name: "Abhishek Mazumdar",
-    position:
-      "Director, Head Sales, Marketing and Business Development, Roca and Luxury Brands",
-    company: "Worked with Dr.Swaminathan",
-    quote:
-      "Dr. Sabesan has played a game-changer role in my professional journey. He is a patient listener who applies both technique and empathy to evaluate every dimension of a person's interactions. He continues to be a beacon of light for me, guiding me whenever I need professional help.",
-  },
-  {
     name: "Govindarajan S",
     position: "Chief Business Officer at ODWEN Technologies",
-    company: "Worked with Dr.Swaminathan",
+    company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "Dr. Sabesan is a passionate coach who provided compelling insights from a 360 'gift of truth' report and challenged my limiting beliefs. I enjoyed the developmental journey, which gave me the confidence to manage business volatility, and today I am heading the business division.",
   },
   {
     name: "Srividhya Balaji",
     position: "Digital Transformation - Analytics Lead at Philips Health Care",
-    company: "Dr.Swaminathan’s client",
+    company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "The nine-month coaching engagement was incredibly enriching. Dr. Sabesan challenged my self-limiting beliefs and offered a 'gift of truth' report from 12 stakeholders. He was a true catalyst for my growth, and many stakeholders perceived a discernible change in me.",
   },
   {
     name: "Dr Vasanth M A S",
     position: "Sr MSL | Med Affairs | CEO Field Award Winner...",
-    company: "Reported directly to Dr.Swaminathan",
+    company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "I had the privilege of working under Dr. Sabesan during my PhD journey; he is a truly exceptional mentor, psychologist, and coach. His ability to combine theoretical knowledge with practical insights is unparalleled, and his mentorship extends beyond the academic realm to holistic development.",
   },
@@ -127,14 +127,14 @@ const testimonials = [
     name: "Manikandan Ramakrishnan",
     position:
       "HR Business Partner | Passionate About People & Talent Development",
-    company: "Worked on the same team",
+    company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "Dr. Sabesan's TVS value sessions were always interactive and insightful. I also attended his two-day self-discovery clinic, which was a life-changing experience that helped us discover our true selves. He is a real source of inspiration and I consider him one of my mentors.",
   },
   {
     name: "Prabhavathy Velmurugan",
     position: "Senior Business Analyst",
-    company: "Senior to Prabhavathy",
+    company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "Attending Dr. Sabesan's SPARK intervention was a privilege. His unique facilitation, using stories and anecdotes, is infectious. He raised our self-awareness and helped us build habits of self-reflection. Stakeholders saw a significant change in us; his passion is incredible.",
   },
@@ -142,9 +142,9 @@ const testimonials = [
   {
     name: "Rishabh",
     position: "Manager, GFS, COE, Madurai",
-    company: "TVS Supply Chain Solutions Ltd.",
+    company: "FORMER CYBERSECURITY ANALYST, WIPRO",
     quote:
-      "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
+      "My sessions with Dr. Swaminathan Sabesan have been nothing short of motivating and transformative. His ability to listen and pay attention to details, helped identify the challenges I faced, and empowered me to think differently through powerful conversations for navigating these challenges. His sessions are quite relaxing in a manner that you feel like talking to a close friend. Overall, he is empathetic and genuinely understands people, thereby helping them with problem management and opportunity development. I strongly recommend Dr. Sabesan for any type of Counselling and developmental engagement related to one's career and personal growth",
   },
 ];
 

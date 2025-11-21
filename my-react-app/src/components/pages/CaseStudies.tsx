@@ -15,7 +15,7 @@ const CaseStudies = () => {
     {
       id: 1,
       title: "Developmental Coaching for Senior Leaders",
-      period: "2018 - 2023",
+      period: "",
       outcomes: [
         "Significant behavioral and mindset changes",
         "Enhanced leadership skills in delegation and collaboration",
@@ -36,7 +36,7 @@ const CaseStudies = () => {
     {
       id: 2,
       title: "Corporate Behavioral Training",
-      period: "2024 - Ongoing",
+      period: "",
       description:
         "Ongoing behavioral training programs focusing on leadership development, communication skills, and professional growth across various industries.",
       clients: ["Multiple Corporate Clients"],
@@ -105,7 +105,7 @@ const CaseStudies = () => {
     },
     {
       icon: <Calendar className="w-8 h-8 text-green-500" />,
-      value: "2025",
+      value: "2025-2026",
       label: "Active Year",
     },
     {

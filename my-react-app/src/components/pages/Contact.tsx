@@ -114,10 +114,10 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+91 9962104002"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 9962104002
                   </a>
                 </CardContent>
               </Card>
@@ -143,7 +143,9 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" // UPDATED LINK
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     Connect on LinkedIn

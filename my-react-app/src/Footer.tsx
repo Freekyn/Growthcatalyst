@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="Growth Catalyst" className="h-12 w-auto" />
             <p className="text-sm opacity-90">
-              Empowering Growth, Enriching Lives
+              Inspiring Minds and Transforming People
             </p>
           </div>
 

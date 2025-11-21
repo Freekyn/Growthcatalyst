@@ -50,10 +50,16 @@ const Services = () => {
               <TabsTrigger value="coaching" className="text-xs md:text-sm py-3">
                 Behavioral Coaching
               </TabsTrigger>
-              <TabsTrigger value="leadership" className="text-xs md:text-sm py-3">
+              <TabsTrigger
+                value="leadership"
+                className="text-xs md:text-sm py-3"
+              >
                 Leadership Development
               </TabsTrigger>
-              <TabsTrigger value="psychometric" className="text-xs md:text-sm py-3">
+              <TabsTrigger
+                value="psychometric"
+                className="text-xs md:text-sm py-3"
+              >
                 Psychometric Assessments
               </TabsTrigger>
               <TabsTrigger value="training" className="text-xs md:text-sm py-3">
@@ -91,19 +97,27 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside space-y-2">
                     <li>
-                      <strong className="text-foreground">Personalized Coaching Plans:</strong> Each
-                      coaching engagement is customized to focus on the
+                      <strong className="text-foreground">
+                        Personalized Coaching Plans:
+                      </strong>{" "}
+                      Each coaching engagement is customized to focus on the
                       individual's specific strengths, challenges, and goals.
                     </li>
                     <li>
-                      <strong className="text-foreground">Holistic Development:</strong> The coaching
-                      process integrates both professional and personal
-                      dimensions, promoting a well-rounded approach to growth.
+                      <strong className="text-foreground">
+                        Holistic Development:
+                      </strong>{" "}
+                      The coaching process integrates both professional and
+                      personal dimensions, promoting a well-rounded approach to
+                      growth.
                     </li>
                     <li>
-                      <strong className="text-foreground">Sustainable Change:</strong> Emphasis is placed on
-                      achieving long-term behavioral change, validated by
-                      stakeholders and reinforced through continuous feedback.
+                      <strong className="text-foreground">
+                        Sustainable Change:
+                      </strong>{" "}
+                      Emphasis is placed on achieving long-term behavioral
+                      change, validated by stakeholders and reinforced through
+                      continuous feedback.
                     </li>
                   </ul>
 
@@ -154,20 +168,26 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside space-y-2">
                     <li>
-                      <strong className="text-foreground">Bespoke Training Interventions:</strong> Each
-                      program is customized to meet the specific needs of the
-                      organization and its leaders, ensuring that the training
-                      is both relevant and immediately applicable.
+                      <strong className="text-foreground">
+                        Bespoke Training Interventions:
+                      </strong>{" "}
+                      Each program is customized to meet the specific needs of
+                      the organization and its leaders, ensuring that the
+                      training is both relevant and immediately applicable.
                     </li>
                     <li>
-                      <strong className="text-foreground">Competency-Based Development:</strong> The
-                      programs concentrate on enhancing essential leadership
+                      <strong className="text-foreground">
+                        Competency-Based Development:
+                      </strong>{" "}
+                      The programs concentrate on enhancing essential leadership
                       competencies, including strategic thinking,
                       decision-making, emotional intelligence, and effective
                       communication.
                     </li>
                     <li>
-                      <strong className="text-foreground">Impactful Learning Experiences:</strong>{" "}
+                      <strong className="text-foreground">
+                        Impactful Learning Experiences:
+                      </strong>{" "}
                       Participants engage in a blend of workshops, real-time
                       feedback, and practical exercises, acquiring actionable
                       insights that lead to measurable improvements and results.
@@ -215,21 +235,28 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside space-y-2">
                     <li>
-                      <strong className="text-foreground">Personalized Insights:</strong> Provides a deeper
-                      understanding of individual personality profiles,
-                      facilitating the creation of tailored personal development
-                      plans and enhancing team dynamics.
+                      <strong className="text-foreground">
+                        Personalized Insights:
+                      </strong>{" "}
+                      Provides a deeper understanding of individual personality
+                      profiles, facilitating the creation of tailored personal
+                      development plans and enhancing team dynamics.
                     </li>
                     <li>
-                      <strong className="text-foreground">Objective Decision-Making:</strong> Utilizes
-                      scientifically validated tools to support informed
-                      decisions in recruitment, leadership development, and team
-                      composition.
+                      <strong className="text-foreground">
+                        Objective Decision-Making:
+                      </strong>{" "}
+                      Utilizes scientifically validated tools to support
+                      informed decisions in recruitment, leadership development,
+                      and team composition.
                     </li>
                     <li>
-                      <strong className="text-foreground">Enhanced Self-Awareness:</strong> Encourages
-                      increased self-awareness, which improves interpersonal
-                      relationships and aligns better with career goals.
+                      <strong className="text-foreground">
+                        Enhanced Self-Awareness:
+                      </strong>{" "}
+                      Encourages increased self-awareness, which improves
+                      interpersonal relationships and aligns better with career
+                      goals.
                     </li>
                   </ul>
 
@@ -239,7 +266,11 @@ const Services = () => {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {assessmentTools.map((tool, index) => (
-                        <Badge key={index} variant="secondary" className="bg-accent/10 text-accent hover:bg-accent/20">
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="bg-accent/10 text-accent hover:bg-accent/20"
+                        >
                           {tool}
                         </Badge>
                       ))}
@@ -292,22 +323,28 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside space-y-2">
                     <li>
-                      <strong className="text-foreground">Bespoke Workshops:</strong> Tailored training
-                      sessions that focus on competencies such as leadership,
-                      communication, conflict resolution, and customer
-                      engagement.
+                      <strong className="text-foreground">
+                        Bespoke Workshops:
+                      </strong>{" "}
+                      Tailored training sessions that focus on competencies such
+                      as leadership, communication, conflict resolution, and
+                      customer engagement.
                     </li>
                     <li>
-                      <strong className="text-foreground">Practical, Hands-On Learning:</strong>{" "}
+                      <strong className="text-foreground">
+                        Practical, Hands-On Learning:
+                      </strong>{" "}
                       Incorporates real-world scenarios and practical exercises,
                       ensuring that participants can immediately apply their
                       learning in their daily roles.
                     </li>
                     <li>
-                      <strong className="text-foreground">Measurable Outcomes:</strong> Evaluates training
-                      effectiveness through pre- and post-assessments,
-                      participant feedback, and observable changes in behavior
-                      and performance.
+                      <strong className="text-foreground">
+                        Measurable Outcomes:
+                      </strong>{" "}
+                      Evaluates training effectiveness through pre- and
+                      post-assessments, participant feedback, and observable
+                      changes in behavior and performance.
                     </li>
                   </ul>
 
@@ -316,10 +353,12 @@ const Services = () => {
                       Training Impact (2023-2024):
                     </h3>
                     <p>
-                      <strong className="text-secondary">3,404 hours</strong> of behavioral training
-                      delivered to <strong className="text-secondary">436 employees</strong> across various
-                      divisions, covering topics from foundational values to
-                      advanced leadership and communication skills.
+                      <strong className="text-secondary">3,404 hours</strong> of
+                      behavioral training delivered to{" "}
+                      <strong className="text-secondary">436 employees</strong>{" "}
+                      across various divisions, covering topics from
+                      foundational values to advanced leadership and
+                      communication skills.
                     </p>
                   </div>
                 </CardContent>
@@ -335,15 +374,17 @@ const Services = () => {
             <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-foreground">Knowledge Management Solutions</CardTitle>
+                  <CardTitle className="text-foreground">
+                    Knowledge Management Solutions
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Implementing robust knowledge management solutions to
-                    capture, organize, and utilize institutional knowledge.
-                    Features include knowledge capture systems, collaborative
-                    platforms like CRYPTA, and sustained engagement through
-                    workshops and interactive contests.
+                    Implement robust knowledge management solutions to capture,
+                    organize, and utilize institutional knowledge. Features
+                    include knowledge capture systems, collaborative platforms
+                    and sustained engagement through workshops and interactive
+                    contests.
                   </p>
                   <div className="mt-4 p-4 bg-primary/5 border border-primary/10 rounded-lg">
                     <p className="text-xs font-semibold text-primary">
@@ -356,7 +397,9 @@ const Services = () => {
 
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-foreground">Employee Well-being Initiatives</CardTitle>
+                  <CardTitle className="text-foreground">
+                    Employee Well-being Initiatives
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -385,7 +428,9 @@ const Services = () => {
 
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-foreground">Academic and Faculty Development</CardTitle>
+                  <CardTitle className="text-foreground">
+                    Academic and Faculty Development
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -405,7 +450,9 @@ const Services = () => {
 
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-foreground">Consulting Services</CardTitle>
+                  <CardTitle className="text-foreground">
+                    Consulting Services
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -416,16 +463,28 @@ const Services = () => {
                     and profitable growth.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border border-secondary/60 text-secondary"
+                    >
                       Strategic Planning
                     </Badge>
-                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border border-secondary/60 text-secondary"
+                    >
                       Cultural Transformation
                     </Badge>
-                    <Badge variant="outline" className="text-xs border border-secondary/60  text-secondary">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border border-secondary/60  text-secondary"
+                    >
                       Organizational Development
                     </Badge>
-                    <Badge variant="outline" className="text-xs border border-secondary/60 text-secondary">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border border-secondary/60 text-secondary"
+                    >
                       Performance Improvement
                     </Badge>
                   </div>

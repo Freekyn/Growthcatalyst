@@ -22,6 +22,7 @@ import annamalaiAward from "@/assets/annamalai.png";
 import psychometricAward from "@/assets/psycho.png";
 import tvsLogisticsAward from "@/assets/tvsa.png";
 import soilAward from "@/assets/soil.png";
+import InSPAaward from "@/assets/InSPA.png";
 
 const Awards = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -65,6 +66,7 @@ const Awards = () => {
       significance:
         " Through his visionary work, he has positively influenced countless individuals and organizations, inspiring growth, resilience, and excellence",
       category: "Professional Recognition",
+      image: InSPAaward,
     },
     {
       id: 6,
@@ -200,17 +202,17 @@ const Awards = () => {
                   <div>
                     <div className="text-2xl font-bold text-blue-600">30+</div>
                     <div className="text-sm text-gray-600">
-                      Years of Experience
+                      Organisations impacted
                     </div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-green-600">75+</div>
                     <div className="text-sm text-gray-600">
-                      CEOs & CXOs Coached
+                      CEOs & CXOs partnered
                     </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-purple-600">8+</div>
+                    <div className="text-2xl font-bold text-purple-600">7+</div>
                     <div className="text-sm text-gray-600">Major Awards</div>
                   </div>
                   <div>

@@ -15,7 +15,7 @@ const MediaPublications = () => {
       channels: ["DD Pothigai", "Kalaignar TV", "Vendhar TV", "Moon TV"],
       topics: ["Mental Health", "Well-being", "Resilience"],
       description:
-        "Participated in more than 20  talk shows  and interviews addressing topics related to mental health, resilience, and well-being, discussing insights and strategies for managing mental health.",
+        "Participated in more than 20  talk shows  and interviews addressing topics related to mental health, resilience, and well-being, discussing insights and strategies for managing mental health.",
     },
   ];
 
@@ -23,20 +23,16 @@ const MediaPublications = () => {
     {
       type: "Conference Paper",
       title: "Knowledge Management in an Organization - The TVS SCS Approach",
-      venue: "7th Biennial Supply Chain Management Conference at IIM-Bangalore, 2022",
+      venue:
+        "7th Biennial Supply Chain Management Conference at IIM-Bangalore, 2022",
       year: "Presented",
     },
     {
       type: "Book Chapter",
-      title: "HRM in a Post-Epidemic Global Environment: Roles, Strategies, and Implementation",
-      venue: "Apple Academic Press",
-      year: "February 2023",
-    },
-    {
-      type: "Book Chapter",
-      title: "Preserving Employees' Well-being – An Organization's Post-Pandemic Imperative",
+      title:
+        "Preserving Employees' Well-being – An Organization's Post-Pandemic Imperative",
       venue: "Apple Press USA",
-      year: "March 2023",
+      year: "Published",
     },
     {
       type: "Journal Articles",
@@ -61,7 +57,7 @@ const MediaPublications = () => {
       description: "Extending services as Professor of Practice in Psychology",
     },
     {
-      role: "Ph.D. Examiner",
+      role: "Ph.D. examiner",
       institution: "Bharathiar University, Coimbatore",
       department: "",
       period: "",
@@ -82,14 +78,14 @@ const MediaPublications = () => {
       description: "Member of Board of Studies",
     },
     {
-      role: "Ph.D SUPERVISOR",
+      role: "Ph.D. supervisor",
       institution: "",
       department: "",
       period: "",
       description: "Guided Ph.D scholars ( Psychology)",
     },
     {
-      role: "BOARD OF SELECTION ",
+      role: "Board of selection member",
       institution: "Rajiv Gandhi Institute for Youth Development",
       department: "",
       period: "",
@@ -177,6 +173,8 @@ const MediaPublications = () => {
             </div>
           </section>
 
+          <hr />
+
           {/* Publications */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8">Publications</h2>
@@ -190,7 +188,9 @@ const MediaPublications = () => {
                     <div className="flex justify-between items-start">
                       <div>
                         <CardTitle className="text-lg">{pub.title}</CardTitle>
-                        <CardDescription className="text-primary">{pub.type}</CardDescription>
+                        <CardDescription className="text-primary">
+                          {pub.type}
+                        </CardDescription>
                       </div>
                       <Badge variant="outline">{pub.year}</Badge>
                     </div>
@@ -203,6 +203,8 @@ const MediaPublications = () => {
             </div>
           </section>
 
+          <hr />
+
           {/* Academic Roles */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8">Academic Contributions</h2>
@@ -214,7 +216,9 @@ const MediaPublications = () => {
                 >
                   <CardHeader>
                     <CardTitle className="text-lg">{role.role}</CardTitle>
-                    <CardDescription className="text-primary">{role.institution}</CardDescription>
+                    <CardDescription className="text-primary">
+                      {role.institution}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     {role.department && (
@@ -234,6 +238,8 @@ const MediaPublications = () => {
             </div>
           </section>
 
+          <hr />
+
           {/* Editorial Roles */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8">Editorial Roles</h2>
@@ -245,7 +251,9 @@ const MediaPublications = () => {
                 >
                   <CardHeader>
                     <CardTitle className="text-lg">{role.role}</CardTitle>
-                    <CardDescription className="text-primary">{role.publication}</CardDescription>
+                    <CardDescription className="text-primary">
+                      {role.publication}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700">{role.description}</p>
@@ -255,7 +263,8 @@ const MediaPublications = () => {
             </div>
           </section>
 
-          
+          <hr />
+
           {/* Research Guidance */}
           <section>
             <h2 className="text-3xl font-bold mb-8">
@@ -285,7 +294,8 @@ const MediaPublications = () => {
                 <CardContent>
                   <p className="mb-4 text-gray-700">
                     Regular contributor of articles for employees' intranet (TVS
-                    SCS- LINK) and various professional forums.
+                    SCS- LINK) and various professional forums like **LinkedIn,
+                    Mind Matter, The Mental Compass**.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline">Knowledge Management</Badge>
@@ -298,13 +308,16 @@ const MediaPublications = () => {
             </div>
           </section>
 
+          <hr />
+
           {/* Summary Section */}
           <div className="mt-16 text-center">
             <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Academic Impact
-                </h2>
+                  Impact
+                </h2>{" "}
+                {/* UPDATED: Changed from Academic Impact to Impact */}
                 <div className="grid md:grid-cols-4 gap-6 text-center">
                   <div>
                     <div className="text-2xl font-bold text-purple-600">4+</div>
