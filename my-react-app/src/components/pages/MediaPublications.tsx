@@ -294,8 +294,8 @@ const MediaPublications = () => {
                 <CardContent>
                   <p className="mb-4 text-gray-700">
                     Regular contributor of articles for employees' intranet (TVS
-                    SCS- LINK) and various professional forums like **LinkedIn,
-                    Mind Matter, The Mental Compass**.
+                    SCS- LINK) and various professional forums like LinkedIn,
+                    Mind Matter, The Mental Compass.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline">Knowledge Management</Badge>

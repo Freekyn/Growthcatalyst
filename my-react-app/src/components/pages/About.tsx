@@ -148,22 +148,22 @@ const About = () => {
                   </p>
                   <p>
                     As the{" "}
-                    <strong className="text-foreground">
+                    <span className="text-foreground">
                       Founder of Growth Catalyst
-                    </strong>{" "}
+                    </span>{" "}
                     and Co-Founder of Big Impact Solutions, he has coached and
                     mentored over 30 senior leaders who are either Direct
                     Reportees to CEOs/CXOs or first-time CEOs.
                   </p>
                   <p>
                     He has co-created pioneering coaching frameworks such as the{" "}
-                    <strong className="text-foreground">
+                    <span className="text-foreground">
                       Coaching Competency Model, Coaching Readiness Model,
-                    </strong>{" "}
+                    </span>{" "}
                     and{" "}
-                    <strong className="text-foreground">
+                    <span className="text-foreground">
                       Continuous Coaching Competence Assessment Framework
-                    </strong>
+                    </span>
                     , and designed evidence-based well-being interventions that
                     foster thriving workplace cultures.
                   </p>
@@ -197,8 +197,8 @@ const About = () => {
                   </p>
                   <p>
                     Through{" "}
-                    <strong className="text-foreground">Growth Catalyst</strong>
-                    , Dr. Sabesan continues to ignite purposeful growth
+                    <span className="text-foreground">Growth Catalyst</span>,
+                    Dr. Sabesan continues to ignite purposeful growth
                     journeys—helping individuals, teams, and organizations
                     elevate their effectiveness, resilience, and well-being.
                   </p>

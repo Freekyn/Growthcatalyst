@@ -96,7 +96,7 @@ const testimonials = [
   },
   {
     name: "Renjith Pradeepkumar",
-    position: "Manager, GFS, COE, Madurai",
+    position: "",
     company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
