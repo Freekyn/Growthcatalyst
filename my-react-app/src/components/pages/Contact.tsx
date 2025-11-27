@@ -97,10 +97,10 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:info@growthcatalyst.com"
+                    href="mailto:sabesan.growthcatalyst@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    info@growthcatalyst.com
+                    sabesan.growthcatalyst@gmail.com
                   </a>
                 </CardContent>
               </Card>
