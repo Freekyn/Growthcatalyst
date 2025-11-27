@@ -7,11 +7,64 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 import { toast } from "sonner";
+// --- EmailJS and State Imports ---
+import { useState } from "react";
+import emailjs from 'emailjs-com';
+
+// --- EmailJS Configuration: PROVIDED CREDENTIALS ---
+const SERVICE_ID = "service_5vt980a"; 
+const TEMPLATE_ID = "template_jbbia3o";
+const USER_ID = "TOc-ixzKPBdYoENyr";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  // State to manage form data
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Handler for input changes
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  // Handler for form submission (sends email)
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you for your message! We'll get back to you soon.");
+    setIsSubmitting(true);
+
+    // Template parameters MUST match the {{variables}} used in your EmailJS template!
+    const templateParams = {
+      user_name: formData.name, 
+      user_email: formData.email, 
+      company_name: formData.company,
+      message_html: formData.message, 
+    };
+
+    try {
+      // Send the form data using the provided credentials
+      await emailjs.send(
+        SERVICE_ID,    
+        TEMPLATE_ID,   
+        templateParams,
+        USER_ID        
+      );
+
+      console.log('Email successfully sent!');
+      toast.success("Thank you for your message! We'll get back to you soon.");
+      
+      // Clear the form after success
+      setFormData({ name: "", email: "", company: "", message: "" });
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast.error("Failed to send message. Please check your network and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -44,7 +97,13 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your name" required />
+                  <Input 
+                    id="name" 
+                    placeholder="Your name" 
+                    required 
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -54,12 +113,19 @@ const Contact = () => {
                     type="email"
                     placeholder="your.email@company.com"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="company">Company</Label>
-                  <Input id="company" placeholder="Your company name" />
+                  <Input 
+                    id="company" 
+                    placeholder="Your company name" 
+                    value={formData.company}
+                    onChange={handleChange}
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -69,6 +135,8 @@ const Contact = () => {
                     placeholder="Tell us about your needs..."
                     rows={6}
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -76,8 +144,9 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-primary hover:bg-primary-dark"
                   size="lg"
+                  disabled={isSubmitting} // Disable button while sending
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
@@ -143,7 +212,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" // UPDATED LINK
+                    href="https://www.linkedin.com/in/dr-swaminathan-sabesan-330b9a17/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
