@@ -39,7 +39,7 @@ const AboutSection = () => {
                 workplaces.Empowering leaders. Elevating organizations.
                 Enriching lives.
               </p>
-              <p>Our Motto is Inspiring minds and transforming people</p>
+              <p>OUR CORE VALUES: </p>
             </div>
 
             <div className="mt-8 space-y-3">

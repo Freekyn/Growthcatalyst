@@ -5,14 +5,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Award } from "lucide-react"; // Added 'Award' icon here
 import { toast } from "sonner";
 // --- EmailJS and State Imports ---
 import { useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 // --- EmailJS Configuration: PROVIDED CREDENTIALS ---
-const SERVICE_ID = "service_5vt980a"; 
+const SERVICE_ID = "service_5vt980a";
 const TEMPLATE_ID = "template_jbbia3o";
 const USER_ID = "TOc-ixzKPBdYoENyr";
 
@@ -27,7 +27,9 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Handler for input changes
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
@@ -38,30 +40,26 @@ const Contact = () => {
 
     // Template parameters MUST match the {{variables}} used in your EmailJS template!
     const templateParams = {
-      user_name: formData.name, 
-      user_email: formData.email, 
+      user_name: formData.name,
+      user_email: formData.email,
       company_name: formData.company,
-      message_html: formData.message, 
+      message_html: formData.message,
     };
 
     try {
       // Send the form data using the provided credentials
-      await emailjs.send(
-        SERVICE_ID,    
-        TEMPLATE_ID,   
-        templateParams,
-        USER_ID        
-      );
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID);
 
-      console.log('Email successfully sent!');
+      console.log("Email successfully sent!");
       toast.success("Thank you for your message! We'll get back to you soon.");
-      
+
       // Clear the form after success
       setFormData({ name: "", email: "", company: "", message: "" });
-
     } catch (error) {
-      console.error('EmailJS Error:', error);
-      toast.error("Failed to send message. Please check your network and try again.");
+      console.error("EmailJS Error:", error);
+      toast.error(
+        "Failed to send message. Please check your network and try again."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -97,10 +95,10 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input 
-                    id="name" 
-                    placeholder="Your name" 
-                    required 
+                  <Input
+                    id="name"
+                    placeholder="Your name"
+                    required
                     value={formData.name}
                     onChange={handleChange}
                   />
@@ -120,9 +118,9 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="company">Company</Label>
-                  <Input 
-                    id="company" 
-                    placeholder="Your company name" 
+                  <Input
+                    id="company"
+                    placeholder="Your company name"
                     value={formData.company}
                     onChange={handleChange}
                   />
@@ -144,10 +142,27 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-primary hover:bg-primary-dark"
                   size="lg"
-                  disabled={isSubmitting} // Disable button while sending
+                  disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
+
+                {/* --- GSTIN AND MSME SECTION --- */}
+                <div className="pt-4 text-center space-y-1 border-t border-border/50">
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-semibold text-foreground">
+                      GSTIN:
+                    </span>{" "}
+                    33AAXPS4365D1ZB
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-semibold text-foreground">
+                      MSME NUMBER:
+                    </span>{" "}
+                    UDYAM TN-08-0107983
+                  </p>
+                </div>
+                {/* ------------------------------- */}
               </form>
             </div>
 
@@ -222,20 +237,27 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <div className="bg-primary/5 p-6 rounded-lg border border-primary/10">
-                <h3 className="font-heading font-bold text-foreground mb-3">
-                  Professional Affiliations
-                </h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Professor of Practice, VIT University Chennai</li>
-                  <li>• Life Member, Indian Academy of Applied Psychology</li>
-                  <li>• Life Member, ISTD</li>
-                  <li>
-                    • Registered Professional Counselor, Chennai Counselors
-                    Forum
-                  </li>
-                </ul>
-              </div>
+              {/* --- UPDATED: Professional Affiliations now uses Card --- */}
+              <Card className="border-border">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2 text-lg">
+                    <Award className="h-5 w-5 text-primary" />
+                    <span>Professional Affiliations</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Professor of Practice, VIT University Chennai</li>
+                    <li>• Life Member, Indian Academy of Applied Psychology</li>
+                    <li>• Life Member, ISTD</li>
+                    <li>
+                      • Registered Professional Counselor, Chennai Counselors
+                      Forum
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+              {/* ----------------------------------------------------- */}
             </div>
           </div>
         </div>

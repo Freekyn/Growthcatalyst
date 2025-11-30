@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Ayush Agrawal",
     position: "Vice President, India Financing at Deutsche Bank",
-    company: "TVS Supply Chain Solutions Ltd.",
+    company: "",
     quote:
       "Dr. Sabesan is an extremely patient and empathetic listener. Over our 12-month assignment, he guided me to build a long-term professional career and define SMART goals. I saw tangible benefits and continue to see incremental benefits by adopting his methodologies.",
   },
@@ -40,7 +40,7 @@ const testimonials = [
   },
   {
     name: "Sundari Murali",
-    position: "Head",
+    position: "Head – Global  Business Analytics",
     company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "Dr. Sabesan's developmental coaching was transformative for my career. His guidance helped me uncover new solutions and develop critical leadership skills. I am now more consistent and confident in my professional approach.",
@@ -96,7 +96,7 @@ const testimonials = [
   },
   {
     name: "Renjith Pradeepkumar",
-    position: "",
+    position: "Deputy Manager, Freight Forwarding Business",
     company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "The SPARK training by Dr. Sabesan has brought about significant behavioral changes in my work approach. The journaling and reflective practices introduced during the program have been particularly impactful.",
@@ -105,21 +105,21 @@ const testimonials = [
   {
     name: "Govindarajan S",
     position: "Chief Business Officer at ODWEN Technologies",
-    company: "TVS Supply Chain Solutions Ltd.",
+    company: "",
     quote:
       "Dr. Sabesan is a passionate coach who provided compelling insights from a 360 'gift of truth' report and challenged my limiting beliefs. I enjoyed the developmental journey, which gave me the confidence to manage business volatility, and today I am heading the business division.",
   },
   {
     name: "Srividhya Balaji",
     position: "Digital Transformation - Analytics Lead at Philips Health Care",
-    company: "TVS Supply Chain Solutions Ltd.",
+    company: "",
     quote:
       "The nine-month coaching engagement was incredibly enriching. Dr. Sabesan challenged my self-limiting beliefs and offered a 'gift of truth' report from 12 stakeholders. He was a true catalyst for my growth, and many stakeholders perceived a discernible change in me.",
   },
   {
     name: "Dr Vasanth M A S",
-    position: "Sr MSL | Med Affairs | CEO Field Award Winner...",
-    company: "TVS Supply Chain Solutions Ltd.",
+    position: "Sr MSL | Med Affairs | CEO Field Award Winner...Novartis",
+    company: "",
     quote:
       "I had the privilege of working under Dr. Sabesan during my PhD journey; he is a truly exceptional mentor, psychologist, and coach. His ability to combine theoretical knowledge with practical insights is unparalleled, and his mentorship extends beyond the academic realm to holistic development.",
   },
@@ -133,10 +133,10 @@ const testimonials = [
   },
   {
     name: "Prabhavathy Velmurugan",
-    position: "Senior Business Analyst",
+    position: "Senior Business Analyst, Centre of Excellence (COE)",
     company: "TVS Supply Chain Solutions Ltd.",
     quote:
-      "Attending Dr. Sabesan's SPARK intervention was a privilege. His unique facilitation, using stories and anecdotes, is infectious. He raised our self-awareness and helped us build habits of self-reflection. Stakeholders saw a significant change in us; his passion is incredible.",
+      "Attending Dr. Sabesan's SPARK intervention was a privilege. His unique facilitation, using stories and anecdotes, is infectious. He raised our self-awareness and helped us build habits of self-reflection. Stakeholders saw a significant change in us; his passion is incredible. . He empowered me to work on my areas of development and he showed me the mirror on what I should stop and what I should start. He shaped and transformed my perspective in profound ways . I am proud to say that I was one the beneficiaries of the SPARK program and for which Dr.Sabesan deserves appreciation . I will stay connected to Dr.Sabesan for all my professional endeavors. I am sure that he will continue his mission of making a difference to people’s lives both professionally and personally.",
   },
   // --- RISHABH'S TESTIMONIAL (UNCHANGED) ---
   {
