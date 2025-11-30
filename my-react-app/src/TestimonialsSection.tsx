@@ -13,13 +13,13 @@ const testimonials = [
     name: "Abhishek Mazumdar",
     position:
       "Director, Head Sales, Marketing and Business Development, Roca and Luxury Brands",
-    company: "TVS Supply Chain Solutions Ltd.",
+    company: "",
     quote:
       "Dr. Sabesan has played a game-changer role in my professional journey. He is a patient listener who applies both technique and empathy to evaluate every dimension of a person's interactions. He continues to be a beacon of light for me, guiding me whenever I need professional help.",
   },
   {
     name: "Boby Mohan",
-    position: "Vice President and CIO",
+    position: "Vice President",
     company: "TVS Supply Chain Solutions Ltd.",
     quote:
       "I've seen a remarkable improvement in Srividhya's ability to collaborate and handle objections objectively. Dr. Sabesan's coaching has truly transformed her approach to teamwork and communication.",
